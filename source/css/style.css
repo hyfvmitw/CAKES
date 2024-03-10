@@ -1,0 +1,165 @@
+.main-header {
+  background-color: #fff;
+}
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 280px;
+}
+.main-nav__list {
+  display: none;
+}
+.main-header__phone {
+  display: none;
+}
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/burger-menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+}
+.phone {
+  font-size: 15px;
+  line-height: 40px;
+  color: #2d2829;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Bold.woff) format('woff'), url(../fonts/PlayfairDisplay-Bold.woff2) format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Circe-Regular";
+  src: url(../fonts/Circe-Regular.woff) format('woff'), url(../fonts/Circe-Regular.woff2) format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "IntroScriptR-H2Base";
+  src: url(../fonts/IntroScriptR-H2Base.woff) format('woff'), url(../fonts/IntroScriptR-H2Base.woff2) format('woff2');
+  font-weight: 700;
+}
+.logo {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  line-height: 32px;
+  text-decoration: none;
+}
+.intro {
+  font-family: IntroScriptR-H2Base;
+  font-size: 22px;
+  color: #32313d;
+}
+.hero {
+  background-image: url(../img/cake-photo-1.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-top: 222px;
+  margin-bottom: 50px;
+}
+.hero__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  text-align: center;
+}
+.hero__priority-handmade {
+  margin-bottom: 30px;
+}
+.title {
+  font-family: Playfair Display;
+  font-weight: 700;
+  color: #2d2829;
+  text-align: center;
+}
+.page {
+  font-family: Circe-Regular;
+  font-size: 14px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.page__body {
+  margin: 0;
+  background-color: #fbebea;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.our-cakes__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+.our-cakes__title {
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+.our-cakes__list {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.our-cakes__item {
+  height: 120px;
+  padding-top: 14px;
+  padding-left: 14px;
+  margin-bottom: 10px;
+}
+.our-cakes__item--classic {
+  background-image: url(../img/classic-cakes.jpg);
+  background-repeat: no-repeat;
+}
+.our-cakes__item--muss {
+  background-image: url(../img/muss-cakes.jpg);
+  background-repeat: no-repeat;
+}
+.our-cakes__item--wedding {
+  background-image: url(../img/wedding-cakes.jpg);
+  background-repeat: no-repeat;
+}
+.our-cakes__item--mans {
+  background-image: url(../img/mens-cakes.jpg);
+  background-repeat: no-repeat;
+}
+.our-cakes__item--woman {
+  background-image: url(../img/woman-cakes.jpg);
+  background-repeat: no-repeat;
+}
+.our-cakes__item--child {
+  background-image: url(../img/child-cakes.jpg);
+  background-repeat: no-repeat;
+}
+.our-cakes__name {
+  font-size: 14px;
+  color: #2d2829;
+}
+.our-cakes__quantity {
+  font-size: 12px;
+  color: rgba(45, 40, 41, 0.7);
+}
+.main-page__title {
+  position: absolute;
+  font-size: 40px;
+  line-height: 36px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
