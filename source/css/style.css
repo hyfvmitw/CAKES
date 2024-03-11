@@ -93,6 +93,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.our-cakes {
+  margin-bottom: 53px;
+}
 .our-cakes__wrapper {
   margin: 0 auto;
   width: 280px;
@@ -148,6 +151,51 @@
   position: absolute;
   font-size: 40px;
   line-height: 36px;
+}
+.order__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+.order__title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.order-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.order-steps {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+.order-step {
+  background-color: #fff;
+}
+.order-step:not(:last-child) {
+  margin-bottom: 10px;
+}
+.order-step__title {
+  font-size: 16px;
+  color: #f50049;
+}
+.size__list {
+  list-style-type: none;
+}
+li.size__item:not(:first-of-type) {
+  display: none;
+}
+.decoration__list {
+  list-style-type: none;
+}
+li.decoration__item:not(:first-of-type) {
+  display: none;
+}
+.order-result {
+  background-color: #fff;
+}
+.order-result__title {
+  text-align: left;
 }
 .visually-hidden {
   position: absolute;
