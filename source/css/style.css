@@ -36,6 +36,11 @@
   font-weight: 700;
 }
 @font-face {
+  font-family: "PlayfairDisplay-BoldItalic";
+  src: url(../fonts/PlayfairDisplay-BoldItalic.woff) format('woff'), url(../fonts/PlayfairDisplay-BoldItalic.woff2) format('woff2');
+  font-weight: 700;
+}
+@font-face {
   font-family: "Circe-Regular";
   src: url(../fonts/Circe-Regular.woff) format('woff'), url(../fonts/Circe-Regular.woff2) format('woff2');
   font-weight: 700;
@@ -155,6 +160,7 @@
 .order__wrapper {
   margin: 0 auto;
   width: 280px;
+  margin-bottom: 50px;
 }
 .order__title {
   font-size: 24px;
@@ -196,6 +202,67 @@ li.decoration__item:not(:first-of-type) {
 }
 .order-result__title {
   text-align: left;
+}
+.reviews__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 50px;
+}
+.about__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 50px;
+}
+.blockquote__text {
+  font-family: PlayfairDisplay-BoldItalic;
+  text-align: center;
+}
+.advantages {
+  background-color: #fff;
+}
+.advantages__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 50px;
+}
+.advantages__intro {
+  text-align: center;
+}
+.advantages__list {
+  list-style-type: none;
+}
+.advantages_item--ingredients {
+  background-image: url(../img/ingredients-icon.png);
+  height: 61px;
+  width: 61px;
+  background-repeat: no-repeat;
+}
+.customer-care {
+  background-image: url(../img/customer-care.png);
+  background-repeat: no-repeat;
+  background-position: 0px -135%;
+  min-height: 330px;
+}
+.customer-care__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+.customer-care__title {
+  text-align: left;
+}
+.how-to-order {
+  background-color: #e3353d;
+  color: #fff;
+}
+.how-to-order__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+.how-to-order__title {
+  color: #fff;
+}
+.how-to-order__img {
+  margin: 0;
 }
 .visually-hidden {
   position: absolute;
