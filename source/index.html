@@ -12,13 +12,14 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="/">Cakes</a>
+      <a class="main-header__logo logo" href="index.html">Cakes</a>
       <nav class="main-nav">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="main-nav__item"><a class="site-list__link" href="#">Наши торты</a></li>
-          <li class="main-nav__item"><a class="site-list__link  site-list__link--current" href="#">Индивидуальный заказ</a></li>
+          <li class="main-nav__item"><a class="site-list__link  site-list__link--current" href="#">Индивидуальный
+              заказ</a></li>
           <li class="main-nav__item"><a class="site-list__link" href="#">Отзывы</a></li>
           <li class="main-nav__item"><a class="site-list__link" href="#">О нас</a></li>
           <li class="main-nav__item"><a class="site-list__link" href="#">Как заказать</a></li>
@@ -35,9 +36,14 @@
       <div class="hero__wrapper">
         <h2 class="visually-hidden">Заказывайте у нас</h2>
         <p class="hero__priority-handmade intro">Ручная работа</p>
-        <p class="hero__priority-nature">Натуральные ингредиенты</p>
-        <p class="hero__priority-delivery">Доставка бесплатно при заказе <br> от 2000 рублей <sup>*</sup></p>
-        <button class="hero__button button" type="button">Выбрать торт</button>
+        <div class="hero__flex-wrapper">
+          <div class="hero__priority-wrapper">
+            <p class="hero__priority-nature">Натуральные ингредиенты</p>
+            <p class="hero__priority-delivery">Доставка бесплатно при заказе <br> от 2000 рублей <sup>*</sup></p>
+          </div>
+          <button class="hero__button button" type="button">Выбрать торт</button>
+        </div>
+
       </div>
     </section>
     <!-- НАШИ ТОРТЫ -->
@@ -275,7 +281,7 @@
             <input type="text" name="name" placeholder="Ваше имя" required>
             <input type="text" name="mail" placeholder="Email адрес" required>
             <textarea name="question" id="question" cols="20" rows="5" placeholder="Ваш вопрос" required></textarea>
-            <input type="button" value="Отправить">
+            <input class="button" type="button" value="Отправить">
           </form>
         </div>
         <div class="contacts-right">

@@ -29,6 +29,7 @@
 @media (min-width: 1366px) {
   .main-header__wrapper {
     align-items: end;
+    width: calc(100% - 150px);
   }
 }
 @media (min-width: 768px) {
@@ -109,6 +110,11 @@
   line-height: 32px;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1366px) {
   .logo {
     font-size: 24px;
@@ -119,26 +125,132 @@
   font-size: 22px;
   color: #32313d;
 }
+@media (min-width: 768px) {
+  .intro {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1366px) {
+  .intro {
+    font-size: 42px;
+  }
+}
 .hero {
-  background-image: url(../img/cake-photo-1.png);
-  background-repeat: no-repeat;
-  background-position: 0px -32px;
-  padding-top: 222px;
   margin-bottom: 50px;
+}
+@media (min-width: 768px) {
 }
 .hero__wrapper {
   margin: 0 auto;
   width: 280px;
-  text-align: center;
+  padding-top: 222px;
+}
+@media (min-width: 768px) {
+  .hero__wrapper {
+    width: calc(100% - 100px);
+    text-align: left;
+    padding-top: 240px;
+  }
+}
+@media (min-width: 1366px) {
+  .hero__wrapper {
+    width: calc(100% - 150px);
+    padding-top: 324px;
+  }
 }
 .hero__priority-handmade {
   margin-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero__priority-handmade {
+    text-align: left;
+    margin-bottom: 55px;
+  }
+}
+.hero__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .hero__flex-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+.hero__priority-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+@media (min-width: 768px) {
+  .hero__priority-wrapper {
+    flex-direction: row;
+  }
+}
+.hero__priority-nature {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 20px;
+}
+.hero__priority-nature::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -8px;
+  background-image: url(../img/ingredients-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+}
+@media (min-width: 768px) {
+  .hero__priority-nature::before {
+    top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .hero__priority-nature {
+    width: 200px;
+    margin-right: 20px;
+  }
+}
+.hero__priority-delivery {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+}
+.hero__priority-delivery::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/delivery-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+}
+.hero__button {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero__button {
+    margin: 0;
+    margin-bottom: 145px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__button {
+    margin: 0;
+    margin-bottom: 130px;
+  }
 }
 .title {
   font-family: Playfair Display;
   font-weight: 700;
   color: #2d2829;
-  text-align: center;
 }
 .page {
   font-family: Circe-Regular;
@@ -148,6 +260,7 @@
   margin: 0 auto;
   background-color: #fbebea;
   max-width: 100%;
+  min-width: 320px;
 }
 * {
   margin: 0;
@@ -214,6 +327,27 @@
   transform: translateX(-50%);
   font-size: 40px;
   line-height: 36px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main-page__title {
+    font-size: 60px;
+    line-height: 55px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    left: 50px;
+    transform: translateX(0px);
+  }
+}
+@media (min-width: 1366px) {
+  .main-page__title {
+    font-size: 78px;
+    line-height: 70px;
+    letter-spacing: 0.075em;
+    top: 245px;
+    left: 75px;
+    transform: translateX(0px);
+  }
 }
 .order__wrapper {
   margin: 0 auto;
@@ -421,6 +555,20 @@ li.decoration__item:not(:first-of-type) {
 }
 .phone--footer {
   color: #fff;
+}
+.button {
+  display: block;
+  padding: 0;
+  height: 51px;
+  width: 226px;
+  background-color: #f50049;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+}
+.button:hover {
+  box-shadow: 0px 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
 }
 .visually-hidden {
   position: absolute;

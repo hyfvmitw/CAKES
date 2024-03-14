@@ -1,16 +1,117 @@
 .hero {
-  background-image: url(../img/cake-photo-1.png);
-  background-repeat: no-repeat;
-  background-position: 0px -32px ;
-  padding-top: 222px;
+  // background-image: url(../img/cake-photo-320.png);
+  // background-repeat: no-repeat;
+  // background-position:  center bottom;
+  // background-size: cover;
   margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    // background-image: url(../img/cake-photo.png);
+  }
 }
 
 .hero__wrapper {
   margin: 0 auto;
   width: 280px;
-  text-align: center;
+  // text-align: center;
+  padding-top: 222px;
+
+  @media (min-width: 768px) {
+    width: calc(100% - 100px);
+    text-align: left;
+    padding-top: 240px;
+  }
+
+  @media (min-width: 1366px) {
+    width: calc(100% - 150px);
+    padding-top: 324px;
+
+  }
 }
+
 .hero__priority-handmade {
   margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-bottom: 55px;
+  }
+
+}
+
+.hero__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: column-reverse;
+
+  }
+
+}
+
+.hero__priority-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.hero__priority-nature {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -8px;
+    background-image: url(../img/ingredients-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+    @media (min-width: 768px) {
+      top: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    width: 200px;
+    margin-right: 20px;
+  }
+}
+
+.hero__priority-delivery {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/delivery-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.hero__button {
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 145px;
+  }
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 130px;
+  }
 }
