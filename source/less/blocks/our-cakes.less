@@ -4,12 +4,19 @@
 
 .our-cakes__wrapper {
   margin: 0 auto;
-  width: 280px;
+  width: calc(100% - 40px);
+
+  @media (min-width: 1366px) {
+    width: calc(100% - 150px);
+  }
 }
 
 .our-cakes__title {
   font-size: 24px;
   margin-bottom: 36px;
+  @media (min-width: 1366px) {
+    font-size: 28px;
+  }
 }
 
 .our-cakes__list {
@@ -28,22 +35,27 @@
     background-image: url(../img/classic-cakes.jpg);
     background-repeat: no-repeat;
   }
+
   &--muss {
     background-image: url(../img/muss-cakes.jpg);
     background-repeat: no-repeat;
   }
+
   &--wedding {
     background-image: url(../img/wedding-cakes.jpg);
     background-repeat: no-repeat;
   }
+
   &--mans {
     background-image: url(../img/mens-cakes.jpg);
     background-repeat: no-repeat;
   }
+
   &--woman {
     background-image: url(../img/woman-cakes.jpg);
     background-repeat: no-repeat;
   }
+
   &--child {
     background-image: url(../img/child-cakes.jpg);
     background-repeat: no-repeat;
