@@ -1,0 +1,29 @@
+.slider__toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  margin: 0;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 6px;
+
+
+  &:first-child {
+    width: 8px;
+    height: 8px;
+    background-color: #f50049;
+  }
+  &:last-child {
+    width: 4px;
+    height: 4px;
+  }
+}

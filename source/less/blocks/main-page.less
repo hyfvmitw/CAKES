@@ -1,7 +1,19 @@
 .main-page {
-  position: relative;
-}
 
+}
+.main-page__title-wrapper {
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 678px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 1220px;
+
+  }
+}
 .main-page__title {
   position: absolute;
   top: 135px;
@@ -17,7 +29,7 @@
     text-align: left;
     letter-spacing: 0.05em;
     top: 112px;
-    left: 50px;
+    left: 0;
     transform: translateX(0px);
   }
 
@@ -26,7 +38,7 @@
     line-height: 70px;
     letter-spacing: 0.075em;
     top: 165px;
-    left: 75px;
+    left: 0;
     transform: translateX(0px);
   }
 }

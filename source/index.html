@@ -33,7 +33,9 @@
 
   <!-- MAIN -->
   <main class="main-page">
-    <h1 class="main-page__title title">Торты <br> на заказ</h1>
+    <div class="main-page__title-wrapper">
+      <h1 class="main-page__title title">Торты <br> на заказ</h1>
+    </div>
     <!-- HERO -->
     <section class="hero">
       <div class="hero__wrapper">
@@ -87,18 +89,28 @@
         <p class="order-text intro">Соберите торт в 3 шага</p>
         <ul class="order-steps">
           <li class="order-step">
-            <h3 class="order-step__title title">Выберите начинку</h3>
-            <h4 class="fillings__title">Шоколадный ганаш</h4>
-            <img class="fillings__img" height="113" width="241" src="../img/fillings-img.png" alt="Начинка">
-            <p class="fillings__desc">Ароматный шоколадный бисквит, густой шоколадный крем - самый
-              шоколадный из всех возможных десертов!</p>
-            <p class="fillings__price">1000 руб/кг</p>
-            <p class="fillings__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
-            </p>
-            <button class="fillings__button button" type="button">Выбрать</button>
+            <h3 class="order-step__title title"><span class="step-number">01</span> Выберите начинку</h3>
+            <div class="img-wrapper">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="../img/fillings-img-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/fillings-img-tablet.jpg">
+                <img class="fillings__img" src="../img/fillings-img-phone.jpg" alt="Начинка">
+              </picture>
+            </div>
+            <div class="fillings-wrapper">
+              <p class="fillings__toggles slider__toggles">
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+              </p>
+              <h4 class="fillings__title">Шоколадный ганаш</h4>
+              <p class="fillings__desc">Ароматный шоколадный бисквит, густой шоколадный крем - самый
+                шоколадный из всех возможных десертов!</p>
+              <p class="fillings__price">1000 руб/кг</p>
+              <button class="fillings__button button" type="button">Выбрать</button>
+            </div>
           </li>
           <li class="order-step">
             <h3 class="order-step__title title">Размер</h3>
@@ -126,10 +138,10 @@
                   <p class="size_desc">(25-30 персон)</p>
                 </li>
                 <p class="size__toggle">
-                  <button class="slider__toggle" type="button">1</button>
-                  <button class="slider__toggle" type="button">2</button>
-                  <button class="slider__toggle" type="button">3</button>
-                  <button class="slider__toggle" type="button">4</button>
+                  <button class="slider__toggle" type="button"></button>
+                  <button class="slider__toggle" type="button"></button>
+                  <button class="slider__toggle" type="button"></button>
+                  <button class="slider__toggle" type="button"></button>
                 </p>
               </ul>
             </div>
@@ -151,10 +163,10 @@
                 </li>
               </ul>
               <p class="decoration__toggle">
-                <button class="slider__toggle" type="button">1</button>
-                <button class="slider__toggle" type="button">2</button>
-                <button class="slider__toggle" type="button">3</button>
-                <button class="slider__toggle" type="button">4</button>
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
+                <button class="slider__toggle" type="button"></button>
               </p>
             </div>
             <button class="decoration__button button" type="button">Выбрать</button>
@@ -187,10 +199,10 @@
         </p>
         <p class="reviews__counter">1/26</p>
         <p class="reviews__toggle">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-          <button class="slider__toggle" type="button">4</button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
         </p>
       </div>
     </section>
