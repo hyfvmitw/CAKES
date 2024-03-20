@@ -89,15 +89,15 @@
         <p class="order-text intro">Соберите торт в 3 шага</p>
         <ul class="order-steps">
           <li class="order-step">
-            <h3 class="order-step__title title"><span class="step-number">01</span> Выберите начинку</h3>
-            <div class="img-wrapper">
+            <h3 class="order-step__title title"><span class="step-number">01</span> <br> Выберите <br>начинку</h3>
+            <div class="order-step__img-wrapper">
               <picture>
                 <source media="(min-width: 1366px)" srcset="../img/fillings-img-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="../img/fillings-img-tablet.jpg">
                 <img class="fillings__img" src="../img/fillings-img-phone.jpg" alt="Начинка">
               </picture>
             </div>
-            <div class="fillings-wrapper">
+            <div class="order-step__fillings-wrapper">
               <p class="fillings__toggles slider__toggles">
                 <button class="slider__toggle" type="button"></button>
                 <button class="slider__toggle" type="button"></button>
@@ -113,42 +113,67 @@
             </div>
           </li>
           <li class="order-step">
-            <h3 class="order-step__title title">Размер</h3>
-            <div class="size slider">
+            <h3 class="order-step__title title"><span class="step-number">02</span> <br> Размер</h3>
+            <div class="order-step__size slider">
               <ul class="size__list slider__list">
-                <li class="size__item slider__item">
+                <li class="size__item size__item--size-1 slider__item">
                   <h4 class="size__title">17-18 см</h4>
-                  <img class="size__img" src="./img/size-1.png" height="110" width="110" alt="17-18 см">
+                  <div class="img-before img-before--size-1">
+                    <picture>
+                      <source media="(min-width: 1366px)" srcset="../img/size-1-desktop.png">
+                      <source media="(min-width: 768px)" srcset="../img/size-1-tablet.png">
+                      <img class="size__img size__img--size-1" src="../img/size-1-phone.png" height="80" width="80" alt="17-18 см">
+                    </picture>
+                  </div>
                   <p class="size_desc">(1кг - 6 персон)</p>
+                  <p class="size__toggle slider__toggles">
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                  </p>
                 </li>
-                <li class="size__item slider__item">
+                <li class="size__item size__item--size-2 slider__item">
                   <h4 class="size__title">23-24 см</h4>
-                  <img class="size__img" src="./img/size-2.png" height="154" width="154" alt="23-24 см">
+                  <div class="img-before img-before--size-2">
+                    <picture>
+                      <source media="(min-width: 1366px)" srcset="../img/size-2-desktop.png">
+                      <source media="(min-width: 768px)" srcset="../img/size-2-tablet.png">
+                      <img class="size__img size__img--size-2" src="./img/size-2.png" height="110" width="110" alt="23-24 см">
+                    </picture>
+                  </div>
                   <p class="size_desc">(10-12 персон)</p>
 
                 </li>
-                <li class="size__item slider__item">
+                <li class="size__item size__item--size-3 slider__item">
                   <h4 class="size__title">Два яруса 25 и 20 см</h4>
-                  <img class="size__img" src="./img/size-3.png" height="174" width="174" alt="Два яруса 25 и 20 см">
+                  <div class="img-before img-before--size-3">
+                    <picture>
+                      <source media="(min-width: 1366px)" srcset="../img/size-3-desktop.png">
+                      <source media="(min-width: 768px)" srcset="../img/size-3-tablet.png">
+                      <img class="size__img size__img--size-3" src="./img/size-3.png" height="125" width="125" alt="Два яруса 25 и 20 см">
+                    </picture>
+                  </div>
                   <p class="size_desc">(15-20 персон)</p>
                 </li>
-                <li class="size__item slider__item">
+                <li class="size__item size__item--size-4 slider__item">
                   <h4 class="size__title">Три яруса 30, 25 и 18 см</h4>
-                  <img class="size__img" src="./img/size-4.png" height="202" width="202" alt="Три яруса 30, 25 и 18 см">
+                  <div class="img-before img-before--size-4">
+                    <picture>
+                      <source media="(min-width: 1366px)" srcset="../img/size-4-desktop.png">
+                      <source media="(min-width: 768px)" srcset="../img/size-4-tablet.png">
+                      <img class="size__img size__img--size-4" src="./img/size-4.png" height="140" width="140"
+                        alt="Три яруса 30, 25 и 18 см">
+                    </picture>
+                  </div>
                   <p class="size_desc">(25-30 персон)</p>
                 </li>
-                <p class="size__toggle">
-                  <button class="slider__toggle" type="button"></button>
-                  <button class="slider__toggle" type="button"></button>
-                  <button class="slider__toggle" type="button"></button>
-                  <button class="slider__toggle" type="button"></button>
-                </p>
               </ul>
             </div>
             <button class="size__button button" type="button">Выбрать</button>
           </li>
           <li class="order-step">
-            <h3 class="order-step__title title">Оформление</h3>
+            <h3 class="order-step__title title"><span class="step-number">03</span> <br> Оформление</h3>
             <div class="decoration slider">
               <ul class="decoration__list slider__list">
                 <li class="decoration__item slider__item">
