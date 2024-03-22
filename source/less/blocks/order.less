@@ -99,7 +99,6 @@ br {
     width: 125px;
     padding-top: 45px;
     padding-left: 45px;
-    margin-right: 35px;
     margin-bottom: 0;
   }
 
@@ -359,6 +358,7 @@ li.size__item:not(:first-of-type) {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       top: 50%;
+
       @media (min-width: 1366px) {
         font-size: 18px;
       }
@@ -374,6 +374,7 @@ li.size__item:not(:first-of-type) {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       top: 50%;
+
       @media (min-width: 1366px) {
         font-size: 18px;
       }
@@ -388,6 +389,7 @@ li.size__item:not(:first-of-type) {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       top: 50%;
+
       @media (min-width: 1366px) {
         font-size: 18px;
       }
@@ -402,6 +404,7 @@ li.size__item:not(:first-of-type) {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       top: 50%;
+
       @media (min-width: 1366px) {
         font-size: 18px;
       }
@@ -450,15 +453,117 @@ li.size__item:not(:first-of-type) {
     display: none;
 
   }
+}
+
+// ОФОРМЛЕНИЕ
+
+.decoration {
+  
+  @media (min-width: 768px) {
+    padding-top: 60px;
+    margin-left: 50px;
+  }
 
 }
 
 .decoration__list {
+  display: flex;
+  align-items: end;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.decoration__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 210px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    width: auto;
+  }
+
 }
 
 li.decoration__item:not(:first-of-type) {
   display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.decoration__title {
+  order: 3;
+  text-align: center;
+  width: auto;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+  }
+}
+
+.decoration__img {
+  order: 1;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    width: 215px;
+    height: 281px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 339px;
+    height: 449px;
+  }
+}
+
+.decoration__price {
+  order: 4;
+  font-family: "Playfair Display";
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.decoration__toggle {
+  order: 2;
+  margin: 0 auto;
+  margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+
+.decoration__button {
+  margin: 0 auto;
+  height: 51px;
+  width: 178px;
+  margin-bottom: 45px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .order-result {

@@ -88,6 +88,7 @@
         <h2 class="order__title title">Индивидуальный заказ</h2>
         <p class="order-text intro">Соберите торт в 3 шага</p>
         <ul class="order-steps">
+          <!-- Первый шаг -->
           <li class="order-step">
             <h3 class="order-step__title title"><span class="step-number">01</span> <br> Выберите <br>начинку</h3>
             <div class="order-step__img-wrapper">
@@ -112,6 +113,7 @@
               <button class="fillings__button button" type="button">Выбрать</button>
             </div>
           </li>
+          <!-- Второй шаг -->
           <li class="order-step">
             <h3 class="order-step__title title"><span class="step-number">02</span> <br> Размер</h3>
             <div class="order-step__size slider">
@@ -122,7 +124,8 @@
                     <picture>
                       <source media="(min-width: 1366px)" srcset="img/size-1-desktop.png">
                       <source media="(min-width: 768px)" srcset="img/size-1-tablet.png">
-                      <img class="size__img size__img--size-1" src="img/size-1-phone.png" height="80" width="80" alt="17-18 см">
+                      <img class="size__img size__img--size-1" src="img/size-1-phone.png" height="80" width="80"
+                        alt="17-18 см">
                     </picture>
                   </div>
                   <p class="size_desc">(1кг - 6 персон)</p>
@@ -139,7 +142,8 @@
                     <picture>
                       <source media="(min-width: 1366px)" srcset="img/size-2-desktop.png">
                       <source media="(min-width: 768px)" srcset="img/size-2-tablet.png">
-                      <img class="size__img size__img--size-2" src="img/size-2.png" height="110" width="110" alt="23-24 см">
+                      <img class="size__img size__img--size-2" src="img/size-2.png" height="110" width="110"
+                        alt="23-24 см">
                     </picture>
                   </div>
                   <p class="size_desc">(10-12 персон)</p>
@@ -151,7 +155,8 @@
                     <picture>
                       <source media="(min-width: 1366px)" srcset="img/size-3-desktop.png">
                       <source media="(min-width: 768px)" srcset="img/size-3-tablet.png">
-                      <img class="size__img size__img--size-3" src="img/size-3.png" height="125" width="125" alt="Два яруса 25 и 20 см">
+                      <img class="size__img size__img--size-3" src="img/size-3.png" height="125" width="125"
+                        alt="Два яруса 25 и 20 см">
                     </picture>
                   </div>
                   <p class="size_desc">(15-20 персон)</p>
@@ -172,27 +177,39 @@
             </div>
             <button class="size__button button" type="button">Выбрать</button>
           </li>
+          <!-- Третий шаг -->
           <li class="order-step">
             <h3 class="order-step__title title"><span class="step-number">03</span> <br> Оформление</h3>
             <div class="decoration slider">
               <ul class="decoration__list slider__list">
                 <li class="decoration__item slider__item">
                   <h4 class="decoration__title">Маршмэллоу</h4>
-                  <img src="img/decoration-cakes-1.png" height="204" width="177" alt="Маршмэллоу">
+                  <picture>
+                    <source media="(min-width: 1366px)" srcset="img/decoration-cakes-1-desktop.png">
+                    <source media="(min-width: 768px)" srcset="img/decoration-cakes-1-tablet.png">
+                    <img class="decoration__img" src="img/decoration-cakes-1-phone.png" height="204" width="177"
+                      alt="Маршмэллоу">
+                  </picture>
                   <p class="decoration__price">600 руб/кг</p>
+                  <p class="decoration__toggle slider__toggles">
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                  </p>
                 </li>
                 <li class="decoration__item slider__item">
                   <h4 class="decoration__title">Ягодное ассорти</h4>
-                  <img src="./img/decoration-cakes-2.png" height="281" width="214" alt="Ягодное ассорти">
+                  <picture>
+                    <source media="(min-width: 1366px)" srcset="img/decoration-cakes-2-desktop.png">
+                    <source media="(min-width: 768px)" srcset="img/decoration-cakes-2-tablet.png">
+                    <img class="decoration__img" src="img/decoration-cakes-2-phone.png" height="281" width="214"
+                      alt="Маршмэллоу">
+                  </picture>
                   <p class="decoration__price">700 руб/кг</p>
                 </li>
               </ul>
-              <p class="decoration__toggle">
-                <button class="slider__toggle" type="button"></button>
-                <button class="slider__toggle" type="button"></button>
-                <button class="slider__toggle" type="button"></button>
-                <button class="slider__toggle" type="button"></button>
-              </p>
+
             </div>
             <button class="decoration__button button" type="button">Выбрать</button>
           </li>
