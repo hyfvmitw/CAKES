@@ -215,16 +215,29 @@
           </li>
         </ul>
         <div class="order-result">
-          <h3 class="order-result__title title">Ваш выбор</h3>
-          <dl class="order-result__description-list">
-            <dt class="order-result__description-term">Начинка</dt>
-            <dd class="order-result__description-definition">Шоколадный ганаш</dd>
-            <dt class="order-result__description-term">Размер</dt>
-            <dd class="order-result__description-definition">2 кг</dd>
-            <dt class="order-result__description-term">Оформление</dt>
-            <dd class="order-result__description-definition">Маршмэллоу</dd>
-          </dl>
-          <button class="order-result__button button" type="button">Заказать торт</button>
+          <div class="order-result__wrapper">
+            <h3 class="order-result__title title">Ваш выбор</h3>
+            <div class="description__wrapper">
+              <dl class="order-result__description-list">
+                <div class="description-item">
+                  <dt class="order-result__description-term intro">Начинка</dt>
+                  <dd class="order-result__description-definition order-result__description-definition--filling">
+                    Шоколадный ганаш</dd>
+                </div>
+                <div class="description-item">
+                  <dt class="order-result__description-term intro">Размер</dt>
+                  <dd class="order-result__description-definition order-result__description-definition--size">2 кг</dd>
+                </div>
+                <div class="description-item">
+                  <dt class="order-result__description-term intro">Оформление</dt>
+                  <dd class="order-result__description-definition order-result__description-definition--decor">
+                    Маршмэллоу</dd>
+                </div>
+              </dl>
+              <button class="order-result__button button" type="button">Заказать торт</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
