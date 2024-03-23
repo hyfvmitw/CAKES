@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (min-width: 768px) {
     display: none;
   }
@@ -17,13 +18,22 @@
   margin-right: 6px;
 
 
+  &:not(:first-child) {
+    background-color: #dddddd;
+  }
+
   &:first-child {
     width: 8px;
     height: 8px;
     background-color: #f50049;
   }
+
   &:last-child {
     width: 4px;
     height: 4px;
   }
+
+}
+.slider__toggle:not(:first-child).slider__toggle--light {
+  background-color: #ffffff;
 }
