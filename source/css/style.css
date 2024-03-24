@@ -1522,12 +1522,13 @@ li.decoration__item:not(:first-of-type) {
   }
 }
 .advantages__wrapper {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .advantages__wrapper {
     width: 678px;
-    margin: 0 auto;
     margin-bottom: 212px;
   }
 }
