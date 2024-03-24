@@ -1429,6 +1429,7 @@ li.decoration__item:not(:first-of-type) {
   background-image: url(../img/inst-icon-phone.svg);
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   .about__social--inst {
