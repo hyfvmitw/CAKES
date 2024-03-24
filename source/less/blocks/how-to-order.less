@@ -1,17 +1,168 @@
-.how-to-order {
+.how-to-order__wrapper {
+  width: 320px;
+  margin: 0 auto;
   background-color: #e3353d;
   color: #fff;
   margin-bottom: 10px;
+  background-image: url(../img/how-to-order-phone.png);
+  background-repeat: no-repeat;
+  background-position: bottom -65px center;
+
+  @media (min-width:768px) {
+    width: 768px;
+    background-image: url(../img/how-to-order-tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom -140px center;
+  }
+
+  @media (min-width: 1366px) {
+    width: 1366px;
+    background-image: url(../img/how-to-order-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
 }
-.how-to-order__wrapper {
+
+.content__wrapper {
   margin: 0 auto;
   width: 280px;
   padding-top: 36px;
+  padding-bottom: 118px;
+
+  @media (min-width:768px) {
+    width: 385px;
+    padding-top: 55px;
+    margin-right: 55px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 500px;
+    padding-top: 130px;
+    padding-bottom: 102px;
+    margin-right: 30px;
+  }
 }
+
 .how-to-order__title {
+  font-size: 24px;
+  line-height: 24px;
   color: #fff;
-  margin-bottom: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (min-width:768px) {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
 }
-.how-to-order__img {
-  display: block;
+
+.how-to-order__list {
+  padding-left: 45px;
+  list-style-type: none;
+  width: 230px;
+
+  @media (min-width:768px) {
+    width: 310px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 440px;
+  }
+}
+
+.how-to-order__item {
+  position: relative;
+
+  &--1::before {
+    position: absolute;
+    content: "1";
+    font-family: "Playfair Display";
+    font-size: 35px;
+    transform: translateX(-100%) translateX(-14px) translateY(-19px);
+
+    @media (min-width:768px) {
+      font-size: 36px;
+      transform: translateX(-100%) translateX(-20px) translateY(-19px);
+    }
+
+    @media (min-width: 1366px) {
+      font-size: 64px;
+      transform: translateX(-100%) translateX(-20px) translateY(-35px);
+    }
+  }
+
+  &--2::before {
+    position: absolute;
+    content: "2";
+    font-family: "Playfair Display";
+    font-size: 35px;
+    transform: translateX(-100%) translateX(-14px) translateY(-19px);
+
+    @media (min-width:768px) {
+      font-size: 36px;
+      transform: translateX(-100%) translateX(-20px) translateY(-19px);
+    }
+
+    @media (min-width: 1366px) {
+      font-size: 64px;
+      transform: translateX(-100%) translateX(-20px) translateY(-35px);
+    }
+  }
+
+  &--3::before {
+    position: absolute;
+    content: "3";
+    font-family: "Playfair Display";
+    font-size: 35px;
+    transform: translateX(-100%) translateX(-14px) translateY(-19px);
+
+    @media (min-width:768px) {
+      font-size: 36px;
+      transform: translateX(-100%) translateX(-20px) translateY(-19px);
+    }
+
+    @media (min-width: 1366px) {
+      font-size: 64px;
+      transform: translateX(-100%) translateX(-20px) translateY(-35px);
+    }
+  }
+}
+
+
+
+
+.how-to-order__item-title {
+  font-size: 15px;
+  line-height: 14px;
+  margin-bottom: 8px;
+
+  @media (min-width: 1366px) {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+}
+
+.how-to-order__item-text {
+  line-height: 16px;
+  margin-bottom: 23px;
+
+  @media (min-width:768px) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 1366px) {
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 38px;
+  }
 }
