@@ -730,6 +730,41 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .order-step--arrows::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    background-image: url(../img/arrow-left-ico.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.6;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+    top: 50%;
+    left: 90px;
+  }
+}
+@media (min-width: 768px) {
+  .order-step--arrows::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    background-image: url(../img/arrow-right-ico.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.6;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+    top: 50%;
+    right: 50px;
+  }
 }
 @media (min-width: 768px) {
   .order-step--decor {

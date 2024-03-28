@@ -61,6 +61,54 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &--arrows {
+    &::before {
+
+      @media (min-width:768px) {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        background-image: url(../img/arrow-left-ico.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        opacity: 0.6;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        top: 50%;
+        left: 90px;
+
+      }
+
+      @media (min-width: 1366px) {}
+    }
+
+    &::after {
+
+      @media (min-width:768px) {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        background-image: url(../img/arrow-right-ico.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        opacity: 0.6;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        top: 50%;
+        right: 50px;
+
+      }
+
+      @media (min-width: 1366px) {}
+    }
+
+  }
 
   &--decor {
     @media (min-width:768px) {
@@ -71,9 +119,6 @@
       background: url(../img/order-step-3-desktop.png) left bottom 25px no-repeat #fff;
     }
   }
-
-
-
 
   @media (min-width:768px) {
     box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
