@@ -19,7 +19,8 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="main-nav__item"><a class="site-list__link site-list__link--header" href="#">Наши торты</a></li>
-          <li class="main-nav__item"><a class="site-list__link  site-list__link--header site-list__link--current" href="#">Индивидуальный
+          <li class="main-nav__item"><a class="site-list__link  site-list__link--header site-list__link--current"
+              href="#">Индивидуальный
               заказ</a></li>
           <li class="main-nav__item"><a class="site-list__link site-list__link--header" href="#">Отзывы</a></li>
           <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#">О нас</a></li>
@@ -37,51 +38,53 @@
       <h1 class="main-page__title title">Торты <br> на заказ</h1>
     </div>
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero__wrapper">
-        <h2 class="visually-hidden">Заказывайте у нас</h2>
-        <p class="hero__priority-handmade intro">Ручная работа</p>
-        <div class="hero__flex-wrapper">
-          <div class="hero__priority-wrapper">
-            <p class="hero__priority-nature">Натуральные ингредиенты</p>
-            <p class="hero__priority-delivery">Доставка бесплатно при заказе <br> от 2000 рублей <sup>*</sup></p>
+    <div class="hero-cakes-wrapper">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h2 class="visually-hidden">Заказывайте у нас</h2>
+          <p class="hero__priority-handmade intro">Ручная работа</p>
+          <div class="hero__flex-wrapper">
+            <div class="hero__priority-wrapper">
+              <p class="hero__priority-nature">Натуральные ингредиенты</p>
+              <p class="hero__priority-delivery">Доставка бесплатно при заказе <br> от 2000 рублей <sup>*</sup></p>
+            </div>
+            <button class="hero__button button" type="button">Выбрать торт</button>
           </div>
-          <button class="hero__button button" type="button">Выбрать торт</button>
         </div>
-      </div>
-    </section>
-    <!-- НАШИ ТОРТЫ -->
-    <section class="our-cakes">
-      <div class="our-cakes__wrapper">
-        <h2 class="our-cakes__title title">Наши торты</h2>
-        <ul class="our-cakes__list">
-          <li class="our-cakes__item our-cakes__item--classic">
-            <h3 class="our-cakes__name">Классические</h3>
-            <p class="our-cakes__quantity">24 вида</p>
-          </li>
-          <li class="our-cakes__item our-cakes__item--muss">
-            <h3 class="our-cakes__name">Муссовые</h3>
-            <p class="our-cakes__quantity">12 видов</p>
-          </li>
-          <li class="our-cakes__item our-cakes__item--wedding">
-            <h3 class="our-cakes__name">Свадебные</h3>
-            <p class="our-cakes__quantity">20 видов</p>
-          </li>
-          <li class="our-cakes__item our-cakes__item--mans">
-            <h3 class="our-cakes__name">Мужчинам</h3>
-            <p class="our-cakes__quantity">12 видов</p>
-          </li>
-          <li class="our-cakes__item our-cakes__item--woman">
-            <h3 class="our-cakes__name">Женщинам</h3>
-            <p class="our-cakes__quantity">16 видов</p>
-          </li>
-          <li class="our-cakes__item our-cakes__item--child">
-            <h3 class="our-cakes__name">Детские</h3>
-            <p class="our-cakes__quantity">18 видов</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
+      <!-- НАШИ ТОРТЫ -->
+      <section class="our-cakes">
+        <div class="our-cakes__wrapper">
+          <h2 class="our-cakes__title title">Наши торты</h2>
+          <ul class="our-cakes__list">
+            <li class="our-cakes__item our-cakes__item--classic">
+              <h3 class="our-cakes__name">Классические</h3>
+              <p class="our-cakes__quantity">24 вида</p>
+            </li>
+            <li class="our-cakes__item our-cakes__item--muss">
+              <h3 class="our-cakes__name">Муссовые</h3>
+              <p class="our-cakes__quantity">12 видов</p>
+            </li>
+            <li class="our-cakes__item our-cakes__item--wedding">
+              <h3 class="our-cakes__name">Свадебные</h3>
+              <p class="our-cakes__quantity">20 видов</p>
+            </li>
+            <li class="our-cakes__item our-cakes__item--mans">
+              <h3 class="our-cakes__name">Мужчинам</h3>
+              <p class="our-cakes__quantity">12 видов</p>
+            </li>
+            <li class="our-cakes__item our-cakes__item--woman">
+              <h3 class="our-cakes__name">Женщинам</h3>
+              <p class="our-cakes__quantity">16 видов</p>
+            </li>
+            <li class="our-cakes__item our-cakes__item--child">
+              <h3 class="our-cakes__name">Детские</h3>
+              <p class="our-cakes__quantity">18 видов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <!-- ИНДИВИДУАЛЬНЫЙ ЗАКАЗ -->
     <section class="order">
       <div class="order__wrapper">
@@ -178,7 +181,7 @@
             <button class="size__button button" type="button">Выбрать</button>
           </li>
           <!-- Третий шаг -->
-          <li class="order-step">
+          <li class="order-step order-step--decor">
             <h3 class="order-step__title title"><span class="step-number">03</span> <br> Оформление</h3>
             <div class="decoration slider">
               <ul class="decoration__list slider__list">
@@ -301,33 +304,36 @@
       </div>
 
     </section>
-    <!-- ПРЕИМУЩЕСТВА -->
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="advantages__title title">Наши преимущества</h2>
-        <p class="advantages__intro intro">Почему нас выбирают?</p>
-        <ul class="advantages__list">
-          <li class="advantages_item advantages_item--nature">
-            <p class="advantage__title">Без искусственных добавок</p>
-            <p class="advantage__text">Работаем с натуральными ингредиентами и свежими продуктами</p>
-          </li>
-          <li class="advantages_item advantages_item--fresh">
-            <p class="advantage__title">Свежий торт в день торжества</p>
-            <p class="advantage__text">Торты изготавливаются в течение суток до отправки</p>
-          </li>
-        </ul>
-      </div>
+    <div class="advantages-customer-wrapper">
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title title">Наши преимущества</h2>
+          <p class="advantages__intro intro">Почему нас выбирают?</p>
+          <ul class="advantages__list">
+            <li class="advantages_item advantages_item--nature">
+              <p class="advantage__title">Без искусственных добавок</p>
+              <p class="advantage__text">Работаем с натуральными ингредиентами и свежими продуктами</p>
+            </li>
+            <li class="advantages_item advantages_item--fresh">
+              <p class="advantage__title">Свежий торт в день торжества</p>
+              <p class="advantage__text">Торты изготавливаются в течение суток до отправки</p>
+            </li>
+          </ul>
+        </div>
 
-    </section>
-    <!-- ЗАБОТА О КЛИЕНТАХ -->
-    <section class="customer-care">
-      <div class="customer-care__wrapper">
-        <h2 class="customer-care__title title">Забота о клиентах</h2>
-        <p class="customer-care__intro intro">Для нас важна</p>
-        <p class="customer-care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы
-          он был создан исключительно для вас и для вашего события.</p>
-      </div>
-    </section>
+      </section>
+      <!-- ЗАБОТА О КЛИЕНТАХ -->
+      <section class="customer-care">
+        <div class="customer-care__wrapper">
+          <h2 class="customer-care__title title">Забота о клиентах</h2>
+          <p class="customer-care__intro intro">Для нас важна</p>
+          <p class="customer-care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы
+            он был создан исключительно для вас и для вашего события.</p>
+        </div>
+      </section>
+
+    </div>
+    <!-- ПРЕИМУЩЕСТВА -->
     <!-- КАК ЗАКАЗАТЬ -->
     <section class="how-to-order">
       <div class="how-to-order__wrapper">
@@ -372,10 +378,10 @@
           <div class="contacts-right">
             <p class="contacts__text contacts__text--2">Или позвоните по телефону: <br><a class="contacts-phone phone"
                 href="tel:+79068999296">+7 906 899 92 96</a></p>
-              <p class="contacts__text contacts__text--3">
-                Наша почта : bakerybypavel@mail.ru
-              </p>
-              <p class="contacts__text contacts__text--4">Мы в соц. сетях:</p>
+            <p class="contacts__text contacts__text--3">
+              Наша почта : bakerybypavel@mail.ru
+            </p>
+            <p class="contacts__text contacts__text--4">Мы в соц. сетях:</p>
             <div class="contacts_social contacts_social--inst"></div>
             <div class="contacts_social contacts_social--vk"></div>
           </div>
@@ -390,8 +396,10 @@
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="/">Cakes</a>
       <ul class="main-footer__list site-list">
-        <li class="main-footer__item site-list__item--current"><a class="site-list__link site-list__link--footer" href="#">Наши торты</a></li>
-        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Индивидуальный заказ</a></li>
+        <li class="main-footer__item site-list__item--current"><a class="site-list__link site-list__link--footer"
+            href="#">Наши торты</a></li>
+        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Индивидуальный
+            заказ</a></li>
         <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Отзывы</a></li>
         <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">О нас</a></li>
         <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Как заказать</a></li>

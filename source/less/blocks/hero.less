@@ -1,11 +1,17 @@
-.hero {
+.hero-cakes-wrapper {
   background-image: url(../img/cake-photo-320.png);
   background-repeat: no-repeat;
-  background-position:  center top -35px;
+  background-position: center top -35px;
   margin-bottom: 50px;
 
   @media (min-width: 768px) {
-    // background-image: url(../img/cake-photo.png);
+    background-image: url(../img/hero-tablet.png);
+    background-position: top right;
+  }
+
+  @media (min-width: 1366px) {
+    background-image: url(../img/hero-desktop.png);
+    background-position: top right;
   }
 }
 
@@ -23,6 +29,7 @@
   @media (min-width: 1366px) {
     width: 1220px;
     padding-top: 324px;
+    margin-bottom: 170px;
 
   }
 }

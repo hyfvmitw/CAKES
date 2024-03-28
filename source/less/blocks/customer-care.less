@@ -1,9 +1,10 @@
 .customer-care {
-  background-image: url(../img/customer-care.png);
-  background-repeat: no-repeat;
-  background-position: center bottom -285px;
-  // transform: translateY(-50%);
+  background: url(../img/customer-care.png) center bottom -285px no-repeat;
   min-height: 330px;
+
+  @media (min-width:768px) {
+    background: none;
+  }
 }
 
 .customer-care__wrapper {

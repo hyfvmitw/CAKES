@@ -140,13 +140,23 @@
     font-size: 42px;
   }
 }
-.hero {
+.hero-cakes-wrapper {
   background-image: url(../img/cake-photo-320.png);
   background-repeat: no-repeat;
   background-position: center top -35px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
+  .hero-cakes-wrapper {
+    background-image: url(../img/hero-tablet.png);
+    background-position: top right;
+  }
+}
+@media (min-width: 1366px) {
+  .hero-cakes-wrapper {
+    background-image: url(../img/hero-desktop.png);
+    background-position: top right;
+  }
 }
 .hero__wrapper {
   margin: 0 auto;
@@ -164,6 +174,7 @@
   .hero__wrapper {
     width: 1220px;
     padding-top: 324px;
+    margin-bottom: 170px;
   }
 }
 .hero__priority-handmade {
@@ -355,6 +366,7 @@
 .our-cakes__item--classic {
   background-image: url(../img/classic-cakes.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 @media (min-width: 768px) {
   .our-cakes__item--classic {
@@ -374,13 +386,31 @@
     box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
   }
 }
-.our-cakes__item--classic::hover {
-  background-color: #aeaeae;
-  box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+.our-cakes__item--classic::after {
+  position: absolute;
+  content: "Смотреть";
+  font-size: 12px;
+  right: 45px;
+  bottom: 20px;
+  cursor: pointer;
+}
+@media (min-width: 1366px) {
+  .our-cakes__item--classic::after {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 110px;
+    background-image: url(../img/arrow-show.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    bottom: 45px;
+    width: 17px;
+    height: 12px;
+  }
 }
 .our-cakes__item--muss {
   background-image: url(../img/muss-cakes.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 @media (min-width: 768px) {
   .our-cakes__item--muss {
@@ -400,9 +430,24 @@
     box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
   }
 }
+@media (min-width: 1366px) {
+  .our-cakes__item--muss::after {
+    position: absolute;
+    content: "";
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url(../img/arrow-show.png);
+    width: 17px;
+    height: 12px;
+  }
+}
 .our-cakes__item--wedding {
   background-image: url(../img/wedding-cakes.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 @media (min-width: 768px) {
   .our-cakes__item--wedding {
@@ -422,9 +467,24 @@
     box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
   }
 }
+@media (min-width: 1366px) {
+  .our-cakes__item--wedding::after {
+    position: absolute;
+    content: "";
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url(../img/arrow-show.png);
+    width: 17px;
+    height: 12px;
+  }
+}
 .our-cakes__item--mans {
   background-image: url(../img/mens-cakes.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 @media (min-width: 768px) {
   .our-cakes__item--mans {
@@ -444,9 +504,24 @@
     box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
   }
 }
+@media (min-width: 1366px) {
+  .our-cakes__item--mans::after {
+    position: absolute;
+    content: "";
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url(../img/arrow-show.png);
+    width: 17px;
+    height: 12px;
+  }
+}
 .our-cakes__item--woman {
   background-image: url(../img/woman-cakes.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 @media (min-width: 768px) {
   .our-cakes__item--woman {
@@ -466,9 +541,24 @@
     box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
   }
 }
+@media (min-width: 1366px) {
+  .our-cakes__item--woman::after {
+    position: absolute;
+    content: "";
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url(../img/arrow-show.png);
+    width: 17px;
+    height: 12px;
+  }
+}
 .our-cakes__item--child {
   background-image: url(../img/child-cakes.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 @media (min-width: 768px) {
   .our-cakes__item--child {
@@ -488,6 +578,20 @@
     background-image: url(../img/child-cakes-desktop.jpg);
     background-size: cover;
     box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
+  }
+}
+@media (min-width: 1366px) {
+  .our-cakes__item--child::after {
+    position: absolute;
+    content: "";
+    right: 45px;
+    bottom: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url(../img/arrow-show.png);
+    width: 17px;
+    height: 12px;
   }
 }
 .our-cakes__name {
@@ -573,7 +677,6 @@
 .order__wrapper {
   margin: 0 auto;
   width: 280px;
-  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .order__wrapper {
@@ -629,7 +732,18 @@
   flex-direction: column;
 }
 @media (min-width: 768px) {
+  .order-step--decor {
+    background: url(../img/order-step-3-tablet.png) left bottom 50px no-repeat #fff;
+  }
+}
+@media (min-width: 1366px) {
+  .order-step--decor {
+    background: url(../img/order-step-3-desktop.png) left bottom 25px no-repeat #fff;
+  }
+}
+@media (min-width: 768px) {
   .order-step {
+    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
     flex-direction: row;
     height: 350px;
   }
@@ -1053,9 +1167,10 @@ li.decoration__item:not(:first-of-type) {
   }
 }
 .decoration__img {
+  display: block;
   order: 1;
-  margin-bottom: 10px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .decoration__img {
@@ -1109,12 +1224,28 @@ li.decoration__item:not(:first-of-type) {
 .order-result {
   background-color: #fff;
 }
+@media (min-width: 768px) {
+  .order-result {
+    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+  }
+}
 .order-result__title {
   text-align: left;
+}
+@media (min-width: 768px) {
+  .reviews {
+    background: url(../img/reviews-decor-left-tablet.png) top left no-repeat, url(../img/reviews-decor-right-tablet.png) top right no-repeat;
+  }
+}
+@media (min-width: 1366px) {
+  .reviews {
+    background: url(../img/reviews-decor-left-desktop.png) top left no-repeat, url(../img/reviews-decor-right-desktop.png) top right no-repeat;
+  }
 }
 .reviews__wrapper {
   margin: 0 auto;
   width: 280px;
+  padding-top: 50px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
@@ -1525,6 +1656,16 @@ li.decoration__item:not(:first-of-type) {
     height: 73px;
   }
 }
+@media (min-width: 768px) {
+  .advantages-customer-wrapper {
+    background: url(../img/advantages-customer-left-tablet.png) top left no-repeat, url(../img/advantages-customer-right-tablet.png) bottom right no-repeat;
+  }
+}
+@media (min-width: 1366px) {
+  .advantages-customer-wrapper {
+    background: url(../img/advantages-customer-left-desktop.png) top left no-repeat, url(../img/advantages-customer-right-desktop.png) bottom right no-repeat;
+  }
+}
 .advantages__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -1677,10 +1818,13 @@ li.decoration__item:not(:first-of-type) {
   }
 }
 .customer-care {
-  background-image: url(../img/customer-care.png);
-  background-repeat: no-repeat;
-  background-position: center bottom -285px;
+  background: url(../img/customer-care.png) center bottom -285px no-repeat;
   min-height: 330px;
+}
+@media (min-width: 768px) {
+  .customer-care {
+    background: none;
+  }
 }
 .customer-care__wrapper {
   margin: 0 auto;
@@ -2399,7 +2543,6 @@ ul.main-footer__list {
 .order-result__wrapper {
   margin: 0 auto;
   width: 250px;
-  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .order-result__wrapper {
