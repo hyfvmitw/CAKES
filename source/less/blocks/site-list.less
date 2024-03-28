@@ -10,10 +10,24 @@
 .site-list__link {
   color: #000;
   text-decoration: none;
-  margin-right: 45px;
+
+
+  &--header {
+    margin-right: 45px;
+  }
+
+  &--footer {
+    color: #fff;
+    font-size: 12px;
+
+    @media (min-width: 1366px) {
+      color: #000;
+      font-size: 16px;
+    }
+  }
+
   &--current,
   &:hover {
     color: #f50049;
   }
 }
-
