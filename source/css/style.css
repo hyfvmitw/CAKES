@@ -141,6 +141,9 @@
   }
 }
 .hero {
+  background-image: url(../img/cake-photo-320.png);
+  background-repeat: no-repeat;
+  background-position: center top -35px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
@@ -344,10 +347,10 @@
   }
 }
 .our-cakes__item {
+  box-sizing: border-box;
   height: 120px;
   padding-top: 14px;
   padding-left: 14px;
-  margin-bottom: 10px;
 }
 .our-cakes__item--classic {
   background-image: url(../img/classic-cakes.jpg);
@@ -788,6 +791,7 @@
   margin-bottom: 20px;
 }
 .fillings__button {
+  display: block;
   width: 178px;
   height: 51px;
   margin: 0 auto;
@@ -1673,8 +1677,9 @@ li.decoration__item:not(:first-of-type) {
   }
 }
 .customer-care {
+  background-image: url(../img/customer-care.png);
   background-repeat: no-repeat;
-  background-position: 0px -135%;
+  background-position: center bottom -285px;
   min-height: 330px;
 }
 .customer-care__wrapper {
@@ -2348,6 +2353,7 @@ ul.main-footer__list {
 .button {
   padding: 0;
   background-color: #f50049;
+  font-family: "Circe-Regular";
   color: #fff;
   text-transform: uppercase;
   border: none;
