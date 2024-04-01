@@ -94,12 +94,15 @@
     }
 
     &::after {
-      position: absolute;
+      @media (min-width: 768px) {
+        position: absolute;
       content: "Смотреть";
       font-size: 12px;
       right: 45px;
       bottom: 20px;
       cursor: pointer;
+      }
+
 
       @media (min-width: 1366px) {
         font-size: 20px;

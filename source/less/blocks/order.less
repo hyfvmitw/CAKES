@@ -63,7 +63,7 @@
   flex-direction: column;
   position: relative;
 
-  &--arrows {
+  &--arrows-1 {
     &::before {
 
       @media (min-width:768px) {
@@ -83,7 +83,10 @@
 
       }
 
-      @media (min-width: 1366px) {}
+      @media (min-width: 1366px) {
+        left: 180px;
+
+      }
     }
 
     &::after {
@@ -105,7 +108,58 @@
 
       }
 
+      @media (min-width: 1366px) {
+        right: 120px;
+      }
+    }
+
+  }
+
+  &--arrows-3 {
+    &::before {
+
+      @media (min-width:768px) {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        background-image: url(../img/arrow-left-ico.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        opacity: 0.6;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        top: 50%;
+        left: 275px;
+
+      }
+
       @media (min-width: 1366px) {}
+    }
+
+    &::after {
+
+      @media (min-width:768px) {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        background-image: url(../img/arrow-right-ico.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        opacity: 0.6;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+        top: 50%;
+        right: 25px;
+
+      }
+
+      @media (min-width: 1366px) {
+        right: 75px;
+      }
     }
 
   }
@@ -121,7 +175,6 @@
   }
 
   @media (min-width:768px) {
-    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
     flex-direction: row;
     height: 350px;
   }
@@ -135,6 +188,8 @@
 
     @media (min-width:768px) {
       margin-bottom: 20px;
+      box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+
     }
 
     @media (min-width:1366px) {
@@ -374,6 +429,7 @@ li.size__item:not(:first-of-type) {
 }
 
 .size__img {
+  display: block;
   order: 1;
 
   @media (min-width: 1366px) {
@@ -402,6 +458,7 @@ li.size__item:not(:first-of-type) {
 
 .img-before {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 45px;
 
   @media (min-width: 768px) {

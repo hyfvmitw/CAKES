@@ -18,14 +18,17 @@
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="main-nav__item"><a class="site-list__link site-list__link--header" href="#">Наши торты</a></li>
+          <li class="main-nav__item"><a class="site-list__link site-list__link--header" href="#our-cakes">Наши торты</a>
+          </li>
           <li class="main-nav__item"><a class="site-list__link  site-list__link--header site-list__link--current"
-              href="#">Индивидуальный
+              href="#order">Индивидуальный
               заказ</a></li>
-          <li class="main-nav__item"><a class="site-list__link site-list__link--header" href="#">Отзывы</a></li>
-          <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#">О нас</a></li>
-          <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#">Как заказать</a></li>
-          <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#">Контакты</a></li>
+          <li class="main-nav__item"><a class="site-list__link site-list__link--header" href="#reviews">Отзывы</a></li>
+          <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#about">О нас</a></li>
+          <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#how-to-order">Как
+              заказать</a></li>
+          <li class="main-nav__item"><a class="site-list__link  site-list__link--header" href="#contacts">Контакты</a>
+          </li>
         </ul>
       </nav>
       <a class="main-header__phone phone" href="tel:+79068999296">+7 906 899 92 96</a>
@@ -53,7 +56,7 @@
         </div>
       </section>
       <!-- НАШИ ТОРТЫ -->
-      <section class="our-cakes">
+      <section class="our-cakes" id="our-cakes">
         <div class="our-cakes__wrapper">
           <h2 class="our-cakes__title title">Наши торты</h2>
           <ul class="our-cakes__list">
@@ -86,13 +89,13 @@
       </section>
     </div>
     <!-- ИНДИВИДУАЛЬНЫЙ ЗАКАЗ -->
-    <section class="order">
+    <section class="order" id="order">
       <div class="order__wrapper">
         <h2 class="order__title title">Индивидуальный заказ</h2>
-        <p class="order-text intro">Соберите торт в 3 шага</p>
+        <p class="order-text   intro">Соберите торт в 3 шага</p>
         <ul class="order-steps">
           <!-- Первый шаг -->
-          <li class="order-step order-step--arrows">
+          <li class="order-step order-step--arrows-1">
             <h3 class="order-step__title title"><span class="step-number">01</span> <br> Выберите <br>начинку</h3>
             <div class="order-step__img-wrapper">
               <picture>
@@ -181,7 +184,7 @@
             <button class="size__button button" type="button">Выбрать</button>
           </li>
           <!-- Третий шаг -->
-          <li class="order-step order-step--decor">
+          <li class="order-step order-step--decor order-step--arrows-3">
             <h3 class="order-step__title title"><span class="step-number">03</span> <br> Оформление</h3>
             <div class="decoration slider">
               <ul class="decoration__list slider__list">
@@ -216,8 +219,9 @@
             </div>
             <button class="decoration__button button" type="button">Выбрать</button>
           </li>
+          <!-- ВАШ ВЫБОР -->
+
         </ul>
-        <!-- ВАШ ВЫБОР -->
         <div class="order-result">
           <div class="order-result__wrapper">
             <h3 class="order-result__title title">Ваш выбор</h3>
@@ -230,7 +234,8 @@
                 </div>
                 <div class="description-item">
                   <dt class="order-result__description-term intro">Размер</dt>
-                  <dd class="order-result__description-definition order-result__description-definition--size">2 кг</dd>
+                  <dd class="order-result__description-definition order-result__description-definition--size">2 кг
+                  </dd>
                 </div>
                 <div class="description-item">
                   <dt class="order-result__description-term intro">Оформление</dt>
@@ -241,12 +246,12 @@
               <button class="order-result__button button" type="button">Заказать торт</button>
             </div>
           </div>
-
         </div>
       </div>
+
     </section>
     <!-- ОТЗЫВЫ  -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title title">Отзывы</h2>
         <div class="reviews__block">
@@ -270,7 +275,7 @@
       </div>
     </section>
     <!-- О НАС -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__wrapper">
         <h2 class="about__title title">О нас</h2>
         <div class="about__content">
@@ -304,6 +309,7 @@
       </div>
 
     </section>
+    <!-- ПРЕИМУЩЕСТВА -->
     <div class="advantages-customer-wrapper">
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -331,11 +337,10 @@
             он был создан исключительно для вас и для вашего события.</p>
         </div>
       </section>
-
     </div>
-    <!-- ПРЕИМУЩЕСТВА -->
+
     <!-- КАК ЗАКАЗАТЬ -->
-    <section class="how-to-order">
+    <section class="how-to-order" id="how-to-order">
       <div class="how-to-order__wrapper">
         <div class="content__wrapper">
           <h2 class="how-to-order__title title">Как заказать </h2>
@@ -360,7 +365,7 @@
 
     </section>
     <!-- КОНТАКТЫ -->
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title title">Контакты</h2>
         <p class="contacts__intro intro">Остались вопросы?</p>
@@ -397,13 +402,13 @@
       <a class="main-footer__logo logo" href="/">Cakes</a>
       <ul class="main-footer__list site-list">
         <li class="main-footer__item site-list__item--current"><a class="site-list__link site-list__link--footer"
-            href="#">Наши торты</a></li>
-        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Индивидуальный
+            href="#our-cakes">Наши торты</a></li>
+        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#order">Индивидуальный
             заказ</a></li>
-        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Отзывы</a></li>
-        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">О нас</a></li>
-        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Как заказать</a></li>
-        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#">Контакты</a></li>
+        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#reviews">Отзывы</a></li>
+        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#about">О нас</a></li>
+        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#how-to-order">Как заказать</a></li>
+        <li class="main-footer__item"><a class="site-list__link site-list__link--footer" href="#contacts">Контакты</a></li>
       </ul>
       <a class="main-footer__phone phone phone--footer" href="tel:+79068999296">+7 906 899 92 96</a>
       <div class="main-footer__social-wrapper">
