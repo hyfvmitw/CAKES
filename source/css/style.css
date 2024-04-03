@@ -1644,18 +1644,18 @@ li.decoration__item:not(:first-of-type) {
     align-items: start;
   }
 }
-.about__social--inst {
+.about__social--telegram {
   height: 36px;
   width: 36px;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url(../img/inst-icon-phone.svg);
+  background-image: url(../img/telegram-icon-phone.svg);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  .about__social--inst {
+  .about__social--telegram {
     margin-bottom: 0;
     margin-right: 15px;
   }
@@ -1676,12 +1676,12 @@ li.decoration__item:not(:first-of-type) {
     margin-right: 15px;
   }
 }
-.about__social--tvit {
+.about__social--youtube {
   height: 36px;
   width: 36px;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url(../img/twit-icon-phone.svg);
+  background-image: url(../img/youtube-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2364,13 +2364,13 @@ li.decoration__item:not(:first-of-type) {
   border-radius: 31px;
   margin-bottom: 45px;
 }
-.contacts_social--inst {
-  background-image: url(../img/inst-icon.png);
+.contacts_social--telegram {
+  background-image: url(../img/telegram-icon+.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .contacts_social--vk {
-  background-image: url(../img/vk-icon.png);
+  background-image: url(../img/vk-icon-contacts.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -2469,8 +2469,8 @@ ul.main-footer__list {
 .main-footer__social {
   display: inline-block;
 }
-.main-footer__social--inst {
-  background-image: url(../img/footer-icon-inst-white.svg);
+.main-footer__social--telegram {
+  background-image: url(../img/telegram-icon-footer-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 23px;
@@ -2479,7 +2479,7 @@ ul.main-footer__list {
   opacity: 0.4;
 }
 @media (min-width: 1366px) {
-  .main-footer__social--inst {
+  .main-footer__social--telegram {
     background-image: url(../img/footer-icon-inst.svg);
   }
 }
