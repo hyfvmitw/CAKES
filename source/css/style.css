@@ -148,12 +148,16 @@
 }
 @media (min-width: 768px) {
   .hero-cakes-wrapper {
+    width: 768px;
+    margin: 0 auto;
     background-image: url(../img/hero-tablet.png);
     background-position: top right;
   }
 }
 @media (min-width: 1366px) {
   .hero-cakes-wrapper {
+    width: 1366px;
+    margin: 0 auto;
     background-image: url(../img/hero-desktop.png);
     background-position: top right;
   }
@@ -1322,11 +1326,15 @@ li.decoration__item:not(:first-of-type) {
 }
 @media (min-width: 768px) {
   .reviews {
+    width: 768px;
+    margin: 0 auto;
     background: url(../img/reviews-decor-left-tablet.png) top left no-repeat, url(../img/reviews-decor-right-tablet.png) top right no-repeat;
   }
 }
 @media (min-width: 1366px) {
   .reviews {
+    width: 1366px;
+    margin: 0 auto;
     background: url(../img/reviews-decor-left-desktop.png) top left no-repeat, url(../img/reviews-decor-right-desktop.png) top right no-repeat;
   }
 }
@@ -1746,11 +1754,15 @@ li.decoration__item:not(:first-of-type) {
 }
 @media (min-width: 768px) {
   .advantages-customer-wrapper {
+    width: 768px;
+    margin: 0 auto;
     background: url(../img/advantages-customer-left-tablet.png) top left no-repeat, url(../img/advantages-customer-right-tablet.png) bottom right no-repeat;
   }
 }
 @media (min-width: 1366px) {
   .advantages-customer-wrapper {
+    width: 1366px;
+    margin: 0 auto;
     background: url(../img/advantages-customer-left-desktop.png) top left no-repeat, url(../img/advantages-customer-right-desktop.png) bottom right no-repeat;
   }
 }
@@ -2156,6 +2168,8 @@ li.decoration__item:not(:first-of-type) {
 }
 @media (min-width: 768px) {
   .contacts {
+    width: 768px;
+    margin: 0 auto;
     background-image: url(../img/contact-bg-tablet.png);
     background-repeat: no-repeat;
     background-position: bottom -50px right -75px;
@@ -2163,6 +2177,8 @@ li.decoration__item:not(:first-of-type) {
 }
 @media (min-width: 1366px) {
   .contacts {
+    width: 1366px;
+    margin: 0 auto;
     background-image: url(../img/contact-bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -2480,7 +2496,7 @@ ul.main-footer__list {
 }
 @media (min-width: 1366px) {
   .main-footer__social--telegram {
-    background-image: url(../img/footer-icon-inst.svg);
+    background-image: url(../img/telegram-icon-footer.svg);
   }
 }
 .main-footer__social--vk {
