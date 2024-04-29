@@ -166,6 +166,7 @@
   margin: 0 auto;
   width: 280px;
   padding-top: 222px;
+  margin-bottom: 53px;
 }
 @media (min-width: 768px) {
   .hero__wrapper {
@@ -319,11 +320,13 @@
 }
 .our-cakes__title {
   font-size: 24px;
+  text-align: center;
   margin-bottom: 36px;
 }
 @media (min-width: 768px) {
   .our-cakes__title {
     font-size: 28px;
+    text-align: left;
     margin-bottom: 42px;
   }
 }
