@@ -61,6 +61,8 @@
 .main-nav__list {
   position: absolute;
   top: 40px;
+  left: -20px;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .main-nav__list {
@@ -2598,7 +2600,21 @@ ul.main-footer__list {
   text-decoration: none;
 }
 .site-list__link--header {
-  margin-right: 45px;
+  display: block;
+  width: 320px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 40px;
+  color: #383838;
+  background-color: #e7e7e7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 1366px) {
+  .site-list__link--header {
+    margin-right: 45px;
+  }
 }
 .site-list__link--footer {
   color: #fff;
@@ -2610,9 +2626,11 @@ ul.main-footer__list {
     font-size: 16px;
   }
 }
-.site-list__link--current,
-.site-list__link:hover {
-  color: #f50049;
+@media (min-width: 1366px) {
+  .site-list__link--current,
+  .site-list__link:hover {
+    color: #f50049;
+  }
 }
 .phone {
   font-size: 14px;
