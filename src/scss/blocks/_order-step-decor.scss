@@ -1,0 +1,144 @@
+.order-step-decor {
+    position: relative;
+    padding: 65px 72px 65px 276px;
+    background-color: #fff;
+
+    @include tablet {
+        padding: 40px 25px 40px 150px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    &--fon {
+        background-image: url(./../img/order/order-step-3-desktop.png);
+        background-position: left top 100%;
+        background-repeat: no-repeat;
+
+        @include tablet {
+            background-image: url(./../img/order/order-step-3-tablet.png);
+            background-position: left 5% top 85%;
+        }
+
+        @include mobile {
+            background-image: none;
+        }
+    }
+}
+
+.order-step-decor__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include tablet {
+        gap: 25px;
+    }
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.order-step-decor__list {
+    display: flex;
+    gap: 40px;
+    align-items: end;
+
+    @include tablet {
+        gap: 25px;
+    }
+
+    @include mobile {
+        display: block;
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+.order-step-decor__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+        box-shadow: 0px 6px 9.7px 0.3px rgba(0, 0, 0, 0.14);
+    }
+
+    @include mobile {
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    &:first-of-type {
+
+        @include mobile {
+            display: none;
+        }
+
+    }
+
+}
+
+.order-step-decor__item-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    @include mobile {
+        position: static;
+        order: 2;
+        transform: none;
+    }
+}
+
+.order-step-decor__img {
+
+    @include mobile {
+        box-shadow: 0px 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);
+        margin-bottom: 15px;
+    }
+}
+
+.order-step-decor__title {
+    font-size: 20px;
+    text-align: center;
+    color: #2f2f2f;
+
+    @include tablet {
+        font-size: 14px;
+    }
+}
+
+.order-step-decor__price {
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include tablet {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    @include mobile {
+        margin-bottom: 0;
+    }
+}
+
+.order-step-decor__button {
+    display: none;
+
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        height: 51px;
+    }
+}

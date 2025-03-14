@@ -1,0 +1,156 @@
+.order-step-size {
+    position: relative;
+    padding: 150px 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+    margin-bottom: 35px;
+
+    @include tablet {
+        padding: 75px 0;
+        margin-bottom: 21px;
+    }
+
+    @include mobile {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.order-step-size__list {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: end;
+
+    @include tablet {
+        gap: 47px;
+    }
+
+    @include mobile {
+        margin-bottom: 30px;
+    }
+
+}
+
+.order-step-size__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+}
+
+.size__title {
+    padding-top: 25px;
+    font-size: 18px;
+    order: 2;
+    text-align: left;
+
+    @include tablet {
+        font-size: 12px;
+    }
+
+    @include mobile {
+
+        text-align: center;
+    }
+}
+
+.size__desc {
+    padding-top: 10px;
+    font-size: 18px;
+    order: 3;
+
+    @include tablet {
+        font-size: 12px;
+    }
+
+    @include mobile {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.size__img {
+    position: relative;
+
+    @include tablet {}
+
+    &--size-1 {
+        &::before {
+            position: absolute;
+            content: "1 кг";
+            font-size: 17px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+
+            @include tablet {
+                font-size: 12px;
+            }
+
+        }
+
+    }
+
+    &--size-2 {
+        &::before {
+            position: absolute;
+            content: "2 кг";
+            font-size: 17px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+
+            @include tablet {
+                font-size: 12px;
+            }
+
+        }
+    }
+
+    &--size-3 {
+        &::before {
+            position: absolute;
+            content: "5 кг";
+            font-size: 17px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+
+            @include tablet {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &--size-4 {
+        &::before {
+            position: absolute;
+            content: "8 кг";
+            font-size: 17px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+
+            @include tablet {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.order-step-size__button {
+    display: none;
+
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        height: 51px;
+    }
+}

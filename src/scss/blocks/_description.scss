@@ -1,0 +1,36 @@
+.description-1 {
+    font-family: IntroScriptR;
+    font-size: 40px;
+    color: #32313d;
+
+    @include tablet {
+        font-size: 36px;
+    }
+    @include mobile {
+        font-size: 22px;
+    }
+}
+.description-2 {
+    font-family: IntroScriptR;
+    font-size: 35px;
+    color: #32313d;
+
+    @include tablet {
+        font-size: 26px;
+    }
+    @include mobile {
+        font-size: 22px;
+    }
+}
+.description-3 {
+    font-family: IntroScriptR;
+    font-size: 27px;
+    color: #f50049;
+
+    @include tablet {
+        font-size: 18px;
+    }
+    @include mobile {
+        font-size: 20px;
+    }
+}

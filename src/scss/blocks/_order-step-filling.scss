@@ -1,0 +1,112 @@
+.order-step-filling {
+    position: relative;
+    padding: 90px 120px 90px 180px;
+    background-color: #fff;
+    box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+    margin-bottom: 35px;
+
+    @include tablet {
+        padding: 55px 50px 55px 90px;
+        margin-bottom: 21px;
+    }
+    @include mobile {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.order-step-filling__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.order-step-filling__fillings-wrapper {
+    padding: 55px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+
+    @include tablet {
+        padding: 20px 0;
+        max-width: 200px;
+    }
+
+    @include mobile {
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+.fillings__title {
+    font-size: 20px;
+    line-height: 2.733;
+    color: #2f2f2f;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: 1.849;
+    }
+
+    @include mobile {
+        font-size: 16px;
+        line-height: 3.415;
+        order: 1;
+    }
+}
+
+.fillings__desc {
+    font-size: 18px;
+    line-height: 1.333;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    @include mobile {
+        order: 2;
+    }
+}
+
+.fillings__price {
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2.69;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 1.802;
+    }
+
+    @include mobile {
+        font-size: 18px;
+        line-height: 3.287;
+        order: 3;
+        text-align: center;
+    }
+}
+
+.fillings__button {
+    width: 178px;
+    height: 51px;
+
+    @include tablet {
+        width: 135px;
+        height: 43px;
+        margin: 0;
+    }
+
+    @include mobile {
+        display: block;
+        width: 178px;
+        height: 51px;
+        margin: 0 auto;
+        order: 4;
+    }
+}

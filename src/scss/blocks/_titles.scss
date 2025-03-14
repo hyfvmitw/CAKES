@@ -1,0 +1,55 @@
+.title-1 {
+	font-family: var(--font-titles);
+	font-size: 78px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 6px;
+	color: #2e2829;
+
+	@include tablet {
+		font-size: 60px;
+		line-height: 1.1;
+		letter-spacing: 4.5px;
+	}
+
+	@include mobile {
+		font-size: 40px;
+		letter-spacing: 3px;
+	}
+}
+
+.title-2 {
+	font-family: var(--font-titles);
+	font-size: 40px;
+	font-weight: 700;
+	color: #2e2829;
+
+	@include tablet {
+		font-size: 28px;
+	}
+
+	@include mobile {
+		font-size: 24px;
+	}
+}
+
+.title-3 {
+	font-family: var(--font-accent);
+	font-size: 27px;
+	font-weight: 700;
+
+	@include tablet {
+		font-size: 18px;
+	}
+
+	@include mobile {
+		font-size: 16px;
+	}
+}
+
+.title-4 {
+	margin: 1em 0 0.5em;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+}

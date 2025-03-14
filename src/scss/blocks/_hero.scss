@@ -1,0 +1,138 @@
+.hero {
+    position: relative;
+    min-height: 890px;
+    background-image: url(./../img/hero/cake-photo.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+
+    // ----------TEST--------------//
+
+    // @include fluid-ratio(919px 919px, 549px 549px);
+    // background-image: url(./../img/hero/cake-photo.png);
+    // background-position: left top;
+    // background-repeat: no-repeat;
+    // background-size: 70%;
+    // ---------------------------- //
+    @include tablet {
+        background-image: url(./../img/hero/cake-photo-tablet.png);
+        background-size: 65%;
+    }
+
+    @include mobile {
+        min-height: 580px;
+        background-image: url(./../img/hero/cake-photo-mobile.png);
+        background-position: center top;
+        background-size: 100%;
+    }
+}
+
+.opacity-fon {
+    
+    @include mobile {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    max-width: 485px;
+
+    @include tablet {
+        padding-top: 100px;
+    }
+
+    @include mobile {
+        margin: 0 auto;
+        padding-top: 134px;
+    }
+}
+
+.hero__title {
+    margin-bottom: 31px;
+
+    @include tablet {
+        margin-bottom: 29px;
+    }
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.hero__desc {
+    margin-bottom: 59px;
+
+    @include tablet {
+        margin-bottom: 54px;
+    }
+
+    @include mobile {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+}
+
+.hero__flex-wrapper {
+
+    @include mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+.hero_btn {
+    width: 226px;
+    margin-bottom: 128px;
+
+    @include tablet {
+        margin-bottom: 147px;
+    }
+}
+
+.hero__priority-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        margin-bottom: 40px;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.priority__list {
+    display: flex;
+    gap: 12px;
+    align-items: end;
+
+    p {
+        font-size: 14px;
+
+
+
+    }
+
+    img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+p.nature {
+    width: 100px;
+}
+
+p.delivery {
+
+    width: 200px;
+
+}

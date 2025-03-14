@@ -1,0 +1,12 @@
+.phone {
+    font-family: var(--font-main);
+
+    &--header {
+        font-size: 15px;
+        color: #2d2829;
+    }
+
+    &--footer {
+        color: #fff;
+    }
+}

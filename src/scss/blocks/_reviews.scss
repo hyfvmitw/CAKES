@@ -1,0 +1,142 @@
+.reviews {
+    margin-bottom: 75px;
+    background: url(./../img/reviews/reviews-decor-left-desktop.png) top left no-repeat, url(../img/reviews/reviews-decor-right-desktop.png) top right no-repeat;
+
+    @include tablet {
+        background: url(../img/reviews/reviews-decor-left-tablet.png) top left no-repeat, url(../img/reviews/reviews-decor-right-tablet.png) top right no-repeat;
+    }
+
+    @include mobile {
+        background: none;
+    }
+}
+
+.reviews__wrapper {
+    padding: 115px 0;
+
+    @include tablet {
+        margin-bottom: 110px;
+    }
+
+    @include mobile {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.reviews__title {
+    text-align: center;
+    margin-bottom: 65px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    @include mobile {
+        margin-bottom: 25px;
+
+    }
+}
+
+.reviews__block {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    @include tablet {
+        gap: 25px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.reviews__img {
+    width: 400px;
+    height: 400px;
+
+    @include tablet {
+        width: 206px;
+        height: 206px;
+    }
+
+    @include mobile {
+        width: 111px;
+        height: 111px;
+        margin: 0;
+        display: block;
+    }
+}
+
+.reviews__autor {
+    font-size: 27px;
+    line-height: 0.88;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: 0.75;
+    }
+
+    @include mobile {
+        padding-top: 6px;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+    }
+}
+
+.reviews__autor-desc {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+
+    @include tablet {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    @include mobile {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+}
+
+.reviews__text {
+    max-width: 345px;
+    font-size: 18px;
+    text-wrap: balance;
+
+    @include tablet {
+        max-width: 290px;
+        font-size: 14px;
+    }
+
+    @include mobile {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.reviews__unwrap {
+    font-size: 16px;
+    font-family: "Circe-Regular";
+    color: var(--accent);
+    font-style: italic;
+    line-height: 1.56;
+    text-decoration: underline;
+    margin-left: 5px;
+
+    @include tablet {
+        font-size: 14px;
+    }
+
+    @include mobile {
+        font-size: 12px;
+    }
+
+}

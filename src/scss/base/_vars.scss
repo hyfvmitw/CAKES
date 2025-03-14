@@ -1,0 +1,28 @@
+:root {
+	--container-width-desktop: 1366px;
+	--container-width-tablet: 768px;
+	--container-width-mobile: 320px;
+	--container-padding-desktop: 73px;
+	--container-padding-tablet: 20px;
+	--container-padding-mobile: 20px;
+
+	--font-main: 'Circe', sans-serif;
+	--font-accent: 'PlayfairDisplay', sans-serif;
+	--font-desc: 'IntroScriptR', sans-serif;
+	--font-titles: var(--font-accent);
+
+	--page-bg: #fbebea;
+	--text-color: #000;
+	--accent:  #f87b91;
+	--link-color: #2578c8;
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

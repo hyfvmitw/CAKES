@@ -1,0 +1,72 @@
+.order__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+
+    @include tablet {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    @include mobile {
+        font-size: 24px;
+
+        margin-bottom: 16px;
+    }
+}
+
+.order-text {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 55px;
+
+    @include tablet {
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+
+    @include mobile {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+}
+
+.order-step__title {
+    position: absolute;
+    top: 75px;
+    left: 80px;
+    color: #f50049;
+
+    @include tablet {
+        width: 125px;
+        top: 45px;
+        left: 45px;
+    }
+
+    @include mobile {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+.step-number {
+    font-size: 58px;
+
+    @include tablet {
+        font-size: 36px;
+    }
+
+    @include mobile {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+}
+
