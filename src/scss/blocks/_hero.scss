@@ -1,25 +1,19 @@
 .hero {
     position: relative;
-    min-height: 890px;
+    min-height: 941px;
     background-image: url(./../img/hero/cake-photo.png);
     background-position: right top;
     background-repeat: no-repeat;
 
-    // ----------TEST--------------//
-
-    // @include fluid-ratio(919px 919px, 549px 549px);
-    // background-image: url(./../img/hero/cake-photo.png);
-    // background-position: left top;
-    // background-repeat: no-repeat;
-    // background-size: 70%;
-    // ---------------------------- //
     @include tablet {
+        margin-bottom: 100px;
+        min-height: 571px;
         background-image: url(./../img/hero/cake-photo-tablet.png);
-        background-size: 65%;
     }
 
     @include mobile {
         min-height: 580px;
+        margin: 0;
         background-image: url(./../img/hero/cake-photo-mobile.png);
         background-position: center top;
         background-size: 100%;
@@ -27,7 +21,7 @@
 }
 
 .opacity-fon {
-    
+
     @include mobile {
         position: absolute;
         width: 100%;
@@ -95,6 +89,9 @@
 
     @include tablet {
         margin-bottom: 147px;
+    }
+    @include mobile {
+        margin: 0;
     }
 }
 

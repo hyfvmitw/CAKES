@@ -1,5 +1,4 @@
 .reviews {
-    margin-bottom: 75px;
     background: url(./../img/reviews/reviews-decor-left-desktop.png) top left no-repeat, url(../img/reviews/reviews-decor-right-desktop.png) top right no-repeat;
 
     @include tablet {
@@ -8,6 +7,7 @@
 
     @include mobile {
         background: none;
+        margin-bottom: 0;
     }
 }
 
@@ -15,12 +15,10 @@
     padding: 115px 0;
 
     @include tablet {
-        margin-bottom: 110px;
     }
 
     @include mobile {
-        padding-top: 50px;
-        margin-bottom: 50px;
+        padding: 50px 0;
     }
 
 }
