@@ -1,0 +1,221 @@
+.advantages-customer-wrapper {
+    background: url(./../img/advantages/advantages-customer-left-desktop.png) top left no-repeat, url(./../img/advantages/advantages-customer-right-desktop.png) bottom right no-repeat;
+
+    @include tablet {
+        background: url(./../img/advantages/advantages-customer-left-tablet.png) top left no-repeat, url(./../img/advantages/advantages-customer-right-tablet.png) bottom right no-repeat;
+    }
+
+    @include mobile {
+        background-image: none;
+    }
+}
+
+.advantages {
+    margin-bottom: 415px;
+
+    @include tablet {
+        margin-bottom: 215px;
+    }
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages__wrapper {
+
+    @include mobile {
+        margin: 0 auto;
+    }
+
+}
+
+.advantages__title {
+    margin-bottom: 31px;
+    text-align: center;
+
+    @include tablet {
+        margin-bottom: 11px;
+    }
+
+    @include mobile {
+        margin-bottom: 10px;
+    }
+}
+
+.advantages__desc {
+    margin-bottom: 133px;
+    text-align: center;
+
+    @include tablet {
+        margin-bottom: 63px;
+    }
+
+    @include mobile {
+        margin-bottom: 14px;
+    }
+}
+
+.advantages__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding-left: calc((100% - var(--container-width-desktop)) / 2 + (var(--container-width-desktop) / 2));
+    z-index: 1;
+
+    &::before {
+
+        @include mobile {
+            position: absolute;
+            content: '';
+            width: 100vw;
+            /* полная ширина страницы */
+            height: 100%;
+            top: 0;
+            left: calc(-50vw + 50%);
+            /* левое позиционирование */
+            background-color: #fff;
+            z-index: -1;
+        }
+    }
+
+    @include tablet {
+        padding-left: calc((100% - var(--container-width-desktop)) / 2 + (var(--container-width-desktop) / 2) + 45px);
+        gap: 20px;
+    }
+
+    @include mobile {
+        padding: 12px 0;
+    }
+
+}
+
+.advantages__item {
+
+    @include mobile {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.advantage__text {
+    max-width: 375px;
+    font-size: 20px;
+
+    @include tablet {
+        max-width: 260px;
+        font-size: 14px;
+    }
+
+    @include mobile {
+        max-width: 245px;
+    }
+
+    &--nature {
+        position: relative;
+
+        @include mobile {
+            padding-top: 70px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 61px;
+            width: 61px;
+            top: 0;
+            left: calc(-61px - 19px);
+            background-image: url(./../img/advantages/nature-icon.png);
+
+            @include mobile {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &--fresh {
+        position: relative;
+
+        @include mobile {
+            padding-top: 70px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 50px;
+            width: 84px;
+            top: 0;
+            left: calc(-84px - 19px);
+            background-image: url(./../img/advantages/fresh-icon.png);
+
+            @include mobile {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+    }
+}
+
+.customer-care {
+    padding-bottom: 260px;
+
+    @include tablet {
+        padding-bottom: 135px;
+    }
+
+    @include mobile {
+        padding-bottom: 175px;
+        background-image: url(./../img/advantages/customer-care.png);
+        background-repeat: no-repeat;
+        background-position: center bottom 250%;
+
+    }
+}
+
+.customer-care__wrapper {
+
+    @include mobile {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+}
+
+.customer-care__title {
+    margin-bottom: 30px;
+
+    @include tablet {
+        margin-bottom: 14px;
+    }
+
+    @include mobile {
+        text-align: left;
+        margin-bottom: 13px;
+    }
+}
+
+.customer-care__desc {
+    margin-bottom: 21px;
+
+    @include tablet {
+        margin-bottom: 14px;
+    }
+
+    @include mobile {
+        margin-bottom: 10px;
+    }
+}
+
+.customer-care__text {
+    max-width: 440px;
+    font-size: 20px;
+
+    @include tablet {
+        max-width: 325px;
+        font-size: 14px;
+    }
+}
