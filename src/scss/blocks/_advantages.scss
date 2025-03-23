@@ -6,7 +6,9 @@
     }
 
     @include mobile {
-        background-image: none;
+        background-image: url(./../img/advantages/customer-care.png);
+        background-repeat: no-repeat;
+        background-position: center bottom -90%;
     }
 }
 
@@ -169,9 +171,7 @@
 
     @include mobile {
         padding-bottom: 175px;
-        background-image: url(./../img/advantages/customer-care.png);
-        background-repeat: no-repeat;
-        background-position: center bottom 250%;
+        
 
     }
 }

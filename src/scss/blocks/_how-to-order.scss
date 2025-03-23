@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
 
-        @include tablet {
+    @include tablet {
         max-width: var(--container-width-tablet);
         padding: 0 var(--container-padding-tablet);
         background-image: url(./../img/how-to-order/how-to-order-tablet.jpg);
@@ -16,9 +16,7 @@
     @include mobile {
         max-width: var(--container-width-mobile);
         padding: 0 var(--container-padding-mobile);
-        margin: 0 auto;
         background-color: #e3353d;
-        margin-bottom: 40px;
         background-image: url(./../img/how-to-order/how-to-order-phone.png);
         background-repeat: no-repeat;
         background-position: bottom -65px center;
