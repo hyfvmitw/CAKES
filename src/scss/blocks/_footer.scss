@@ -81,7 +81,7 @@
 
 }
 
-.footer-nav__social-wrapper {
+.footer-nav__social {
 	grid-column: 4/5;
 	grid-row: 1/2;
 
@@ -100,36 +100,73 @@
 	@include mobile {
 		padding: 13px 0;
 	}
-}
 
-.footer-nav__social {
-	&--telegram {
-		width: 23px;
-		height: 23px;
-		margin-right: 18px;
-		opacity: 0.5;
-		background-image: url(./../img/icons/telegram-icon-footer.svg);
-		background-repeat: no-repeat;
-		background-position: center;
+	.social-links {
 
-		@include tablet {
-			background-image: url(./../img/icons/telegram-icon-footer-white.svg);
+		gap: 15px;
+
+		@include mobile {
+			gap: 10px;
+		}
+
+		a.social-links--telegram {
+			background: transparent;
+			opacity: 0.5;
+
+			svg {
+				height: 24px;
+				width: 24px;
+				fill: #000;
+
+				@include tablet {
+					fill: #fff;
+				}
+
+				&:hover {
+					// fill: #09a03b;
+				}
+			}
+		}
+
+		a.social-links--vk {
+			background: transparent;
+			opacity: 0.5;
+
+			svg {
+				height: 42px;
+				width: 26px;
+				fill: #000;
+
+				@include tablet {
+					fill: #fff;
+				}
+
+				&:hover {
+					// fill: #09a03b;
+				}
+			}
+		}
+
+		a.social-links--youtube {
+			background: transparent;
+			opacity: 0.5;
+
+			svg {
+				height: 24px;
+				width: 24px;
+				fill: #000;
+
+				@include tablet {
+					fill: #fff;
+				}
+
+
+				&:hover {
+					// fill: #09a03b;
+				}
+			}
 		}
 	}
-
-	&--vk {
-		width: 31px;
-		height: 23px;
-		background-image: url(./../img/icons/footer-icon-vk.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-		opacity: 0.5;
-
-		@include tablet {
-			background-image: url(./../img/icons/footer-icon-vk-white.svg);
-		}
-	}
-
 }
 
 .footer-nav__phone {
@@ -163,8 +200,10 @@
 			text-align: right;
 		}
 	}
+
 	@include mobile {
 		padding: 11px 0;
+
 		p {
 			font-size: 12px;
 			text-align: left;

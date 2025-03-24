@@ -6,7 +6,7 @@
     background-image: url(./../img/contacts/contact-bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 75%;
+    background-size: 60%;
 
     @include tablet {
         padding-top: 50px;
@@ -78,14 +78,14 @@
     p {
         margin-bottom: 50px;
 
-    @include tablet {
-        font-size: 14px;
-        margin-bottom: 18px;
-    }
+        @include tablet {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
 
-    @include mobile {
-        margin-bottom: 12px;
-    }
+        @include mobile {
+            margin-bottom: 12px;
+        }
     }
 }
 
@@ -176,41 +176,53 @@
 }
 
 .contacts__social {
-    display: flex;
-    gap: 30px;
-    align-items: center;
 
-    &--telegram {
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
-        background-color: #fff;
-        background-image: url(./../img/about/about-telegram-icon.svg);
-        background-position: center;
-        background-repeat: no-repeat;
+    .social-links {
+        gap: 30px;
 
+        a.social-links--telegram {
+            height: 62px;
+            width: 62px;
+
+            svg {
+                height: 36px;
+                width: 36px;
+                fill: #f87b91;
+
+                &:hover {
+                    // fill: #09a03b;
+                }
+            }
+        }
+
+        a.social-links--vk {
+            height: 62px;
+            width: 62px;
+
+            svg {
+                height: 36px;
+                width: 36px;
+                fill: #f87b91;
+
+                &:hover {
+                    // fill: #09a03b;
+                }
+            }
+        }
+
+        a.social-links--youtube {
+            height: 62px;
+            width: 62px;
+
+            svg {
+                height: 36px;
+                width: 36px;
+                fill: #f87b91;
+
+                &:hover {
+                    // fill: #09a03b;
+                }
+            }
+        }
     }
-
-    &--vk {
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
-        background-color: #fff;
-        background-image: url(./../img/about/about-vk-icon.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    &--youtube {
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
-        background-color: #fff;
-        background-image: url(./../img/about/about-youtube-icon.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-
 }
