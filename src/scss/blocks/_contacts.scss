@@ -1,0 +1,239 @@
+.contacts {
+    padding-top: 80px;
+    padding-bottom: 300px;
+    max-width: 1366px;
+    margin: 0 auto;
+    background-image: url(./../img/contacts/contact-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 75%;
+
+    @include tablet {
+        padding-top: 50px;
+        padding-bottom: 110px;
+        max-width: 768px;
+        background-image: url(./../img/contacts/contact-bg-tablet+++.png);
+        background-size: 75%;
+    }
+
+    @include mobile {
+        padding-top: 42px;
+        padding-bottom: 50px;
+        background-image: none;
+    }
+}
+
+.contacts__title {
+    line-height: 1;
+    margin-bottom: 42px;
+
+    @include tablet {
+        margin-bottom: 15px;
+    }
+
+    @include mobile {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+}
+
+.contacts__desc {
+    line-height: 1;
+    margin-bottom: 20px;
+
+    @include mobile {
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__content {
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @include tablet {
+        font-size: 14px;
+        gap: 68px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    a {
+        color: #000;
+    }
+}
+
+.contacts__form {
+    max-width: 548px;
+
+    @include tablet {
+        max-width: 350px;
+    }
+
+    p {
+        margin-bottom: 50px;
+
+    @include tablet {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    @include mobile {
+        margin-bottom: 12px;
+    }
+    }
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 75px;
+
+    @include tablet {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+
+.field {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 2px;
+    font-size: 16px;
+    color: #000;
+
+    @include tablet {
+        padding: 14px 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #ffffff;
+    }
+
+    @include mobile {
+        border: none;
+        padding: 14px 10px;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        color: #000;
+        opacity: 0.2;
+        vertical-align: top;
+    }
+
+    &--question {
+        height: 118px;
+
+    }
+}
+
+.textarea {
+    resize: vertical;
+    height: 34px;
+
+    &:focus {
+        outline: none;
+    }
+
+    @include tablet {
+        height: 120px;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        color: #000;
+        opacity: 0.2;
+        vertical-align: bottom;
+    }
+}
+
+input.form-button {
+    display: block;
+    width: 180px;
+    height: 51px;
+    background-color: #f50049;
+    border-radius: 25px;
+
+    font-family: var(--font-main);
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+    &:hover {
+        box-shadow: 0px 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+    }
+
+    @include tablet {
+        width: 160px;
+        height: 43px;}
+
+    @include mobile {
+        width: 180px;
+        height: 51px;
+        margin: 0 auto;
+
+    }
+}
+
+.contacts-links {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @include tablet {
+        gap: 22px;
+    }
+}
+
+.contacts__social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    &--telegram {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background-color: #fff;
+        background-image: url(./../img/about/about-telegram-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    &--vk {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background-color: #fff;
+        background-image: url(./../img/about/about-vk-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    &--youtube {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background-color: #fff;
+        background-image: url(./../img/about/about-youtube-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+}
