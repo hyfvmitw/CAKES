@@ -142,21 +142,9 @@
 
 .order-step-result__button {
     align-self: flex-end;
-    font-size: 13px;
-    width: 226px;
-    height: 51px;
-
-    @include tablet {
-        font-size: 10px;
-        width: 160px;
-        height: 43px;
-    }
 
     @include mobile {
-        font-size: 13px;
         margin-bottom: 35px;
         align-self: center;
-        width: 226px;
-        height: 51px;
     }
 }

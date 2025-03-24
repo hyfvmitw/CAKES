@@ -93,19 +93,10 @@
 }
 
 .fillings__button {
-    width: 178px;
-    height: 51px;
-
-    @include tablet {
-        width: 135px;
-        height: 43px;
-        margin: 0;
-    }
+    margin-right: auto;
+    
 
     @include mobile {
-        display: block;
-        width: 178px;
-        height: 51px;
         margin: 0 auto;
         order: 4;
     }

@@ -46,7 +46,6 @@
 
 .size__title {
     padding-top: 25px;
-    font-size: 18px;
     order: 2;
     text-align: left;
 
@@ -150,7 +149,5 @@
     @include mobile {
         display: block;
         margin: 0 auto;
-        width: 180px;
-        height: 51px;
     }
 }
