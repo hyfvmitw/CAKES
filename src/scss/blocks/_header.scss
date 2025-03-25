@@ -7,6 +7,7 @@
 .main-nav {
 	padding: 60px 0 20px 0;
 	position: relative;
+	
 	display: flex;
 	align-items: end;
 
@@ -26,32 +27,9 @@
 	margin-right: 45px;
 }
 
-.main-nav__toggle {
-	display: none;
-	width: 24px;
-	height: 24px;
-	background-image: url(./../img/icons/burger-menu-close.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 
-	@include tablet {
-		display: block;
-	}
 
-}
 
-.main-nav__list {
-	display: flex;
-	gap: 45px;
-	justify-content: space-between;
-	align-items: end;
-
-	@include tablet {
-		display: none;
-	}
-
-}
 
 .main-nav__phone {
 	flex-grow: 1;
