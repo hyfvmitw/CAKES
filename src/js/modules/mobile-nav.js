@@ -1,4 +1,5 @@
 let navMain = document.querySelector('.main-nav__list');
+let mainNav = document.querySelector('.main-nav');
 let navMainClosed = document.querySelector('.main-nav__list--closed');
 let navToggle = document.querySelector('.main-nav__toggle');
 
@@ -26,18 +27,12 @@ navToggle.addEventListener('click', function () {
 	}
 });
 
-
-// function mobileNav() {
-// 	// Mobile nav button
-// 	const navBtn = document.querySelector('.mobile-nav-btn');
-// 	const nav = document.querySelector('.mobile-nav');
-// 	const menuIcon = document.querySelector('.nav-icon');
-
-// 	navBtn.onclick = function () {
-// 		nav.classList.toggle('mobile-nav--open');
-// 		menuIcon.classList.toggle('nav-icon--active');
-// 		document.body.classList.toggle('no-scroll');
-// 	};
-// }
-
-// export default mobileNav;
+navMain.addEventListener('click', function () {
+	if (navMain.classList.contains('main-nav__list--opened')) {
+		navMain.classList.remove('main-nav__list--opened');
+		navMain.classList.add('main-nav__list--closed');
+		navToggle.classList.remove('main-nav__toggle--opened');
+		navToggle.classList.add('main-nav__toggle--closed');
+		document.body.classList.toggle('no-scroll');
+	}
+});
