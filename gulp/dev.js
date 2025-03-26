@@ -21,6 +21,7 @@ const rename = require('gulp-rename');
 const prettier = require('@bdchauvette/gulp-prettier');
 
 
+
 gulp.task('clean:dev', function (done) {
 	if (fs.existsSync('./build/')) {
 		return gulp

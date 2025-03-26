@@ -1,26 +1,9 @@
 <div class="order-step-filling">
-    <div class="order-step-filling__wrapper">
-        <h3 class="order-step__title title-3"><span class="step-number">01</span> <br> Выберите <br>начинку
-        </h3>
-        <div class="bullet-navigation bullet-navigation--order-1-left"><button
-                class="bullet-navigation--prev"></button></div>
-        <div class="order-step-filling__img-wrapper">
-            <picture>
-                <source media="(min-width: 1200px)" srcset="./img/order/fillings-img-desktop.jpg">
-                <source media="(min-width: 768px)" srcset="./img/order/fillings-img-tablet.jpg">
-                <img class="fillings__img" src="./img/order/fillings-img-phone.jpg" alt="Начинка">
-            </picture>
-        </div>
-        <div class="order-step-filling__fillings-wrapper">
-            <h4 class="fillings__title">Шоколадный ганаш</h4>
-            <p class="fillings__desc">Ароматный шоколадный бисквит, густой шоколадный крем - самый
-                шоколадный из всех возможных десертов!</p>
-            <p class="fillings__price">1000 руб/кг</p>
-            <button class="fillings__button btn btn--sm" type="button">Выбрать</button>
-        </div>
-        <div class="bullet-navigation bullet-navigation--order-1-right">
-            <button class="bullet-navigation--next"></button>
-            <div class="bullet-navigation-counter">1/12</div>
-        </div>
+    <h3 class="order-step__title title-3"><span class="step-number">01</span> <br> Выберите <br>начинку
+    </h3>
+    <div class="filling__slider">
+        @@include('../templates/filling__slider.html')
     </div>
+
+
 </div>

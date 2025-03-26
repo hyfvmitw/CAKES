@@ -9,6 +9,7 @@
         padding: 55px 50px 55px 90px;
         margin-bottom: 21px;
     }
+
     @include mobile {
         padding: 20px;
         margin-bottom: 10px;
@@ -17,7 +18,7 @@
 
 .order-step-filling__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     @include mobile {
         flex-direction: column;
@@ -32,8 +33,8 @@
     max-width: 300px;
 
     @include tablet {
-        padding: 20px 0;
-        max-width: 200px;
+        padding: 20px 25px;
+        max-width: 250px;
     }
 
     @include mobile {
@@ -42,8 +43,25 @@
     }
 }
 
+.fillings__img {
+    width: 343px;
+    height: 390px;
+    border-radius: 10px;
+    object-fit: cover;
+
+    @include tablet {
+        width: 210px;
+        height: 239px;
+    }
+
+    @include mobile {
+        width: 241px;
+        height: 113px;
+    }
+}
+
 .fillings__title {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 2.733;
     color: #2f2f2f;
 
@@ -94,7 +112,7 @@
 
 .fillings__button {
     margin-right: auto;
-    
+
 
     @include mobile {
         margin: 0 auto;
