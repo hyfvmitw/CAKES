@@ -2,16 +2,18 @@
 	<div class="order-step-filling__wrapper">
 		<div class="order-step-filling__img-wrapper">
 			<picture>
-				<source media="(min-width: 1200px)" srcset="./img/order/fillings-img/@@img-desktop.jpg" />
-				<source media="(min-width: 768px)" srcset="./img/order/fillings-img/@@img-tablet.jpg" />
-				<img class="fillings__img" src="./img/order/fillings-img/@@img-phone.jpg" alt="Начинка" />
+				<source srcset="./img/order/fillings-img/@@img.webp 1x, ./img/order/fillings-img/@@img@2x.webp 2x" type="image/webp" />
+				<source srcset="./img/order/fillings-img/@@img.jpg 1x, ./img/order/fillings-img/@@img@2x.jpg 2x" type="image/jpeg" />
+				<img class="fillings__img" src="./img/order/fillings-img/@@img.jpg" alt="Начинка" />
 			</picture>
 		</div>
 		<div class="order-step-filling__fillings-wrapper">
 			<h4 class="fillings__title">@@title</h4>
 			<p class="fillings__desc">@@desc</p>
-			<p class="fillings__price">@@price руб/кг</p>
-			<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+			<div class="price-button">
+				<p class="fillings__price">@@price руб/кг</p>
+				<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+			</div>
 		</div>
 	</div>
 </div>

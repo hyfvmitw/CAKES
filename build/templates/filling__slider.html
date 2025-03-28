@@ -1,20 +1,21 @@
 <div class="swiper">
 	<div class="swiper-wrapper">
-		<!-- Slides -->
 		<div class="swiper-slide">
 			<div class="order-step-filling__wrapper">
 				<div class="order-step-filling__img-wrapper">
 					<picture>
-						<source media="(min-width: 1200px)" srcset="./img/order/fillings-img/chocolate-ganach-desktop.jpg" />
-						<source media="(min-width: 768px)" srcset="./img/order/fillings-img/chocolate-ganach-tablet.jpg" />
-						<img class="fillings__img" src="./img/order/fillings-img/chocolate-ganach-phone.jpg" alt="Начинка" />
+						<source srcset="./img/order/fillings-img/chocolate-ganach.webp 1x, ./img/order/fillings-img/chocolate-ganach@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/order/fillings-img/chocolate-ganach.jpg 1x, ./img/order/fillings-img/chocolate-ganach@2x.jpg 2x" type="image/jpeg" />
+						<img class="fillings__img" src="./img/order/fillings-img/chocolate-ganach.jpg" alt="Начинка" />
 					</picture>
 				</div>
 				<div class="order-step-filling__fillings-wrapper">
 					<h4 class="fillings__title">Шоколадный ганаш</h4>
 					<p class="fillings__desc">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
-					<p class="fillings__price">1000 руб/кг</p>
-					<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+					<div class="price-button">
+						<p class="fillings__price">1000 руб/кг</p>
+						<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -22,16 +23,37 @@
 			<div class="order-step-filling__wrapper">
 				<div class="order-step-filling__img-wrapper">
 					<picture>
-						<source media="(min-width: 1200px)" srcset="./img/order/fillings-img/strawberries-with-cream-desktop.jpg" />
-						<source media="(min-width: 768px)" srcset="./img/order/fillings-img/strawberries-with-cream-tablet.jpg" />
-						<img class="fillings__img" src="./img/order/fillings-img/strawberries-with-cream-phone.jpg" alt="Начинка" />
+						<source srcset="./img/order/fillings-img/strawberries-with-cream.webp 1x, ./img/order/fillings-img/strawberries-with-cream@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/order/fillings-img/strawberries-with-cream.jpg 1x, ./img/order/fillings-img/strawberries-with-cream@2x.jpg 2x" type="image/jpeg" />
+						<img class="fillings__img" src="./img/order/fillings-img/strawberries-with-cream.jpg" alt="Начинка" />
 					</picture>
 				</div>
 				<div class="order-step-filling__fillings-wrapper">
 					<h4 class="fillings__title">Клубника со сливками</h4>
 					<p class="fillings__desc">Считается одним из самых лучших десертов, который будет по вкусу каждому!</p>
-					<p class="fillings__price">800 руб/кг</p>
-					<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+					<div class="price-button">
+						<p class="fillings__price">800 руб/кг</p>
+						<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="order-step-filling__wrapper">
+				<div class="order-step-filling__img-wrapper">
+					<picture>
+						<source srcset="./img/order/fillings-img/nut-fillings.webp 1x, ./img/order/fillings-img/nut-fillings@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/order/fillings-img/nut-fillings.jpg 1x, ./img/order/fillings-img/nut-fillings@2x.jpg 2x" type="image/jpeg" />
+						<img class="fillings__img" src="./img/order/fillings-img/nut-fillings.jpg" alt="Начинка" />
+					</picture>
+				</div>
+				<div class="order-step-filling__fillings-wrapper">
+					<h4 class="fillings__title">Ореховые начинки</h4>
+					<p class="fillings__desc">Измельченные орехи, сливки, сахар и масло. Придают торту богатый ореховый вкус и текстуру.</p>
+					<div class="price-button">
+						<p class="fillings__price">1200 руб/кг</p>
+						<button class="fillings__button btn btn--sm" type="button">Выбрать</button>
+					</div>
 				</div>
 			</div>
 		</div>

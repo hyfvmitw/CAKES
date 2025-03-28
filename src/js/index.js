@@ -15,7 +15,8 @@ import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
-	// loop: true,
+	loop: true,
+	spaceBetween: 20,
 
 	// If we need pagination
 	// pagination: {

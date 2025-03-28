@@ -17,6 +17,7 @@
 }
 
 .order-step-filling__wrapper {
+    height: auto;
     display: flex;
     justify-content: center;
 
@@ -26,20 +27,22 @@
 }
 
 .order-step-filling__fillings-wrapper {
-    padding: 55px 25px;
+    padding: 45px 25px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     max-width: 300px;
 
     @include tablet {
-        padding: 20px 25px;
+        padding: 10px 25px;
         max-width: 250px;
     }
 
     @include mobile {
         padding: 0;
         max-width: 100%;
+        min-height: 220px;
     }
 }
 
@@ -61,6 +64,7 @@
 }
 
 .fillings__title {
+    width: 100%;
     font-size: 24px;
     line-height: 2.733;
     color: #2f2f2f;
@@ -78,6 +82,7 @@
 }
 
 .fillings__desc {
+    width: 100%;
     font-size: 18px;
     line-height: 1.333;
 
@@ -91,31 +96,36 @@
     }
 }
 
+.price-button {
+    margin-top: auto;
+    order: 3;
+}
+
 .fillings__price {
+    width: 100%;
     font-family: "Playfair Display";
     font-size: 22px;
     font-weight: 700;
-    line-height: 2.69;
+    line-height: 1;
+    margin-bottom: 50px;
+
 
     @include tablet {
         font-size: 20px;
-        line-height: 1.802;
+        margin-bottom: 25px;
     }
 
     @include mobile {
         font-size: 18px;
-        line-height: 3.287;
-        order: 3;
+        order: 1;
         text-align: center;
     }
 }
 
 .fillings__button {
-    margin-right: auto;
-
+    display: block;
 
     @include mobile {
         margin: 0 auto;
-        order: 4;
     }
 }
